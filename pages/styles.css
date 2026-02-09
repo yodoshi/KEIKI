@@ -1,0 +1,1279 @@
+:root {
+  --color1: #f2bdd6;
+  --color2: #a0f2f2;
+  --color3: #177362;
+  --color4: #fff4ba;
+  --color5: #ffffff;
+  --h1-size: 55px;
+  --h1-height: ;
+  --h2-size: 35px;
+  --h2-height: ;
+  --h3-size: 25px;
+  --h4-size: 20px;
+  --h5-size: 16px;
+  --h6-size: 20px;
+  /* SPACING */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+@font-face {
+  font-family: "MiFuente"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/Eyesome-Script.otf") format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+@font-face {
+  font-family: "MiFuente2"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/fonnts.com-quiverleafarabiccf-light.otf")
+    format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--color5);
+  z-index: 50;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#separator1,
+#separator2,
+#separator3 {
+  width: 100vw;
+  height: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* HEADER */
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+img {
+  height: 160px;
+}
+
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h1-size);
+}
+
+header h3 {
+  font-family: "MiFuente";
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h3-size);
+  position: relative;
+  top: 2.5em;
+  left: -2em;
+}
+
+/* NAVBAR */
+
+.nav_container {
+  height: 6em;
+  background-color: #f2bdd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.nav_bar div {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--color5);
+}
+
+.nav_bar div:hover {
+  cursor: pointer;
+  color: var(--color3);
+  transition: 0.5s;
+}
+
+#dropdown {
+  display: none;
+}
+
+.nav_bar img {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  opacity: 0.9;
+  z-index: 100;
+}
+
+/* PEDIATRIC */
+
+.pediatric {
+  background-color: var(--color4);
+}
+
+#sct-ped {
+  scroll-margin-top: 100px;
+}
+
+.pediatric .index {
+  padding-top: 3em;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+
+.pediatric .index h2 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color2);
+  font-weight: 600;
+  font-size: var(--h2-size);
+  display: inline;
+  border-bottom: solid #a0f2f2;
+}
+
+.pediatric .index h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1.5em;
+  font-size: var(--h3-size);
+}
+
+.pediatric .index p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.pediatric .index h3:nth-of-type(2) {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color2);
+  font-weight: 600;
+  text-align: left;
+  padding-top: 1.5em;
+  font-size: var(--h3-size);
+}
+
+.pediatric h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 600;
+  text-align: justify;
+  font-size: var(--h3-size);
+}
+
+#bubble1,
+#bubble2,
+#bubble3,
+#bubble4,
+#bubble5,
+#bubble6,
+#bubble7,
+#bubble8,
+#bubble9,
+#bubble10,
+#bubble11,
+#bubble12,
+#bubble13 {
+  width: 250px;
+  height: 150px;
+}
+
+#bubble1:hover,
+#bubble2:hover,
+#bubble3:hover,
+#bubble4:hover,
+#bubble5:hover,
+#bubble6:hover,
+#bubble7:hover,
+#bubble8:hover,
+#bubble9:hover,
+#bubble12:hover,
+#bubble13:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.pediatric .matrix {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.pediatric .matrix img {
+  height: 20em;
+}
+
+.pediatric .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 352px;
+}
+
+.pediatric .postures .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 500px;
+}
+
+.pediatric .matrix .text {
+  padding-left: 2em;
+}
+
+.pediatric .matrix .text p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.pediatric .matrix .text ul {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  padding-top: 1em;
+  padding-left: 3em;
+  font-size: var(--h6-size);
+  list-style-type: none; /* Oculta la viñeta original */
+  padding-left: 1em;
+}
+
+.pediatric .matrix .text ul li::before {
+  content: "🌸"; /* Tu emoji aquí */
+  padding-right: 0.5em;
+}
+
+.pediatric .postures .matrix .text {
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.pediatric .postures .matrix img {
+  height: 30em;
+}
+
+.pediatric .skull {
+  padding-top: 1.5em;
+}
+
+.pediatric .skull .description {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.pediatric .skull h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 600;
+  text-align: center;
+  font-size: var(--h3-size);
+}
+
+.pediatric .skull p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.pediatric .skull .carrousel {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.pediatric .skull img {
+  height: 12em;
+  padding-top: 1em;
+  padding-right: 2em;
+}
+
+.pediatric .development img {
+  height: 25em;
+}
+
+.pediatric .development .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 600px;
+}
+
+.pediatric .respiratory .matrix .text {
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.pediatric .respiratory img {
+  height: 26em;
+}
+
+.pediatric .respiratory .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 600px;
+}
+
+.pediatric .advice {
+  padding-top: 2em;
+}
+
+.pediatric .advice h3 {
+  text-align: center;
+}
+
+.pediatric .advice .matrix h3 {
+  color: var(--color3);
+}
+
+.pediatric .advice p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.pediatric .advice img {
+  height: 13em;
+}
+
+.pediatric .advice .matrix .text:nth-of-type(1) {
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.pediatric .psychomotor .matrix img {
+  height: 25em;
+}
+
+.pediatric .psychomotor .foot {
+  max-width: 700px;
+}
+
+/* NEUROLOGIC */
+
+.neurological {
+  background-color: var(--color1);
+}
+
+#sct-neu {
+  scroll-margin-top: 130px;
+}
+
+.neurological h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color4);
+  font-weight: 600;
+  font-size: var(--h3-size);
+}
+
+.neurological .index {
+  padding-top: 3em;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+
+.neurological .index h2 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 600;
+  font-size: var(--h2-size);
+  display: inline;
+  border-bottom: solid var(--color3);
+}
+
+.neurological .index h3 {
+  color: var(--color3);
+  text-align: justify;
+  padding-top: 1.5em;
+}
+
+.neurological .index p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.neurological .matrix {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.neurological .matrix img {
+  height: 24em;
+}
+
+.neurological .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 352px;
+}
+
+.neurological .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 500px;
+}
+
+.neurological .matrix .text {
+  padding-left: 2em;
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.neurological .matrix .text p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.neurological .matrix .text ul {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  padding-top: 1em;
+  padding-left: 3em;
+  font-size: var(--h6-size);
+  list-style-type: none; /* Oculta la viñeta original */
+  padding-left: 1em;
+}
+
+.neurological .matrix .text ul li::before {
+  content: "🌸"; /* Tu emoji aquí */
+  padding-right: 0.5em;
+}
+
+.neurological .neurological-adults .matrix .text {
+  padding-left: 2em;
+}
+
+.neurological .neurological-adults p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+}
+
+.neurological .neurological-adults img {
+  height: 20em;
+}
+
+/* MUSCULOSKELETAL */
+
+.musculoskeletal {
+  background-color: var(--color3);
+}
+
+.musculoskeletal h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 600;
+  font-size: var(--h3-size);
+}
+
+.musculoskeletal p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.musculoskeletal h2 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 600;
+  font-size: var(--h2-size);
+  display: inline;
+  border-bottom: solid var(--color1);
+}
+
+.musculoskeletal .index {
+  padding-top: 3em;
+  margin-left: 17em;
+  margin-right: 17em;
+  margin-bottom: 3rem;
+}
+
+.musculoskeletal .index h3 {
+  text-align: justify;
+  padding-top: 1.5em;
+}
+
+.musculoskeletal .description {
+  padding-top: 2em;
+}
+
+.musculoskeletal .text ul {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 400;
+  padding-top: 1em;
+  padding-left: 3em;
+  font-size: var(--h6-size);
+  list-style-type: none; /* Oculta la viñeta original */
+  padding-left: 1em;
+}
+
+.musculoskeletal .text ul li::before {
+  content: "🌸";
+  padding-right: 0.5em;
+}
+
+.musculoskeletal #bubble10,
+#bubble11 {
+  transform: scale(1.2);
+}
+.musculoskeletal #bubble10:hover,
+#bubble11:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 0.5s ease;
+}
+
+.musculoskeletal .matrix {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.musculoskeletal .text {
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.musculoskeletal img {
+  height: 18em;
+}
+
+.musculoskeletal .description {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.musculoskeletal .musculoskeletal-adults img {
+  height: 18em;
+}
+
+.musculoskeletal .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+  font-weight: 200;
+  max-width: 450px;
+}
+
+/* PREGNANCY */
+
+.pregnancy {
+  background-color: var(--color2);
+}
+
+.pregnancy h2 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color4);
+  font-weight: 600;
+  font-size: var(--h2-size);
+  display: inline;
+  border-bottom: solid var(--color4);
+}
+
+.pregnancy h3 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color4);
+  font-weight: 600;
+  font-size: var(--h3-size);
+}
+
+.pregnancy p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  text-align: justify;
+  padding-top: 1em;
+  font-size: var(--h6-size);
+}
+
+.pregnancy .index {
+  padding-top: 3em;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+
+.pregnancy .index h3 {
+  text-align: justify;
+  padding-top: 1.5em;
+}
+
+.pregnancy .description {
+  padding-top: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.pregnancy .matrix {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.pregnancy .text ul {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 400;
+  padding-top: 1em;
+  padding-left: 3em;
+  font-size: var(--h6-size);
+  list-style-type: none; /* Oculta la viñeta original */
+  padding-left: 1em;
+}
+
+.pregnancy .text ul li::before {
+  content: "🌸";
+  padding-right: 0.5em;
+}
+
+.pregnancy img {
+  height: 22em;
+}
+
+.pregnancy .foot {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+  max-width: 450px;
+}
+
+.pregnancy .subpregnancy .matrix .text {
+  padding-left: 2em;
+}
+
+.pregnancy .post-birth img {
+  height: 20em;
+}
+
+.pregnancy .post-birth .foot {
+  max-width: 500px;
+}
+
+@media (max-width: 950px) {
+  /* HEADER */
+  #main {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    height: 7rem;
+    width: fit-content;
+  }
+
+  #main img {
+    transform: scale(0.6, 0.6);
+    display: inline;
+  }
+
+  h1 {
+    font-size: var(--h4-size);
+    display: inline;
+    position: relative;
+    top: -4.3rem;
+    left: -2rem;
+  }
+
+  .header-container {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  header h3 {
+    font-family: "MiFuente";
+    font-style: normal;
+    width: fit-content;
+    color: var(--color3);
+    font-size: var(--h4-size);
+    position: relative;
+    top: -4.3rem;
+    left: 15rem;
+  }
+
+  /* NAVBAR */
+
+  nav {
+    display: flex;
+  }
+
+  #dropdown {
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+    background-color: var(--color1);
+    height: fit-content;
+    position: relative;
+    top: 10rem;
+    right: 1rem;
+  }
+
+  .displayed {
+    opacity: 1;
+    transform: scaleY(1) !important;
+    z-index: 10;
+  }
+
+  #dropdown div {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--color5);
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #dropdown div:hover {
+    color: var(--color3);
+    cursor: pointer;
+    transform: 0.5s;
+  }
+
+  .nav_bar {
+    margin-left: 50%;
+  }
+
+  .nav_bar p {
+    display: none;
+  }
+
+  .nav_bar img {
+    display: block;
+    height: 3.5rem;
+    margin-right: -1.5rem;
+  }
+
+  #menu-bttm {
+    position: relative;
+    right: -9rem;
+  }
+
+  /* PEDIATRIC */
+
+  .pediatric h3 {
+    text-align: left;
+  }
+
+  .pediatric .index {
+    padding-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .pediatric .index h2 {
+    width: fit-content;
+    display: block; /* o un ancho fijo */
+    text-align: center;
+  }
+
+  .pediatric .index h3 {
+    padding-top: 1.5rem;
+  }
+
+  .pediatric .index .bubbles {
+    display: none;
+  }
+
+  .pediatric .index .mbl_bubbles {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, auto);
+    margin-top: 1rem;
+    max-width: 20rem;
+  }
+
+  .pediatric .index .mbl_bubbles div {
+    font-weight: 600;
+    width: 9rem;
+    height: 5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble1 {
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble2 {
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble3 {
+    background-color: var(--color2);
+    color: var(--color4);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble4 {
+    background-color: var(--color2);
+    color: var(--color4);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble5 {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble6 {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+
+  .pediatric .index .mbl_bubbles .mbl_bubble7 {
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+
+  .pediatric .matrix {
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pediatric .matrix .text {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .pediatric .digestive .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 0;
+  }
+
+  .pediatric .postures .matrix {
+    padding-top: 0;
+  }
+
+  .pediatric .postures .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .pediatric .postures .matrix .text {
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .pediatric .postures .matrix .foot {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pediatric .skull .description {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pediatric .skull .carrousel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 1.5rem;
+    justify-items: center;
+  }
+
+  .pediatric .skull .carrousel img {
+    padding-right: 0;
+  }
+
+  .pediatric .development .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 0;
+  }
+  .pediatric .development .matrix .foot {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pediatric .respiratory .matrix .text {
+    padding-right: 0;
+  }
+
+  .pediatric .respiratory .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .pediatric .respiratory .matrix .foot {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pediatric .advice .matrix .text:nth-of-type(1) {
+    padding-right: 0;
+  }
+  .pediatric .advice .matrix:nth-of-type(1) img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pediatric .advice .matrix:nth-of-type(2) img {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .pediatric .advice .matrix:nth-of-type(2) {
+    padding-top: 0rem;
+  }
+
+  .pediatric .advice .matrix:nth-of-type(3) img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pediatric .advice .matrix:nth-of-type(4) .text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .pediatric .advice .matrix:nth-of-type(4) img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pediatric .psychomotor .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 0;
+  }
+  .pediatric .psychomotor .matrix .foot {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* NEUROLOGICAL */
+
+  .neurological .index {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .neurological .index h2 {
+    display: block;
+    text-align: center;
+  }
+
+  .neurological .index .bubbles {
+    display: none;
+  }
+
+  .neurological .index .mbl_bubbles {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .neurological .index .mbl_bubbles div {
+    font-weight: 600;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .neurological .index .mbl_bubbles .mbl_bubble1 {
+    background-color: var(--color4);
+    color: var(--color2);
+  }
+
+  .neurological .index .mbl_bubbles .mbl_bubble2 {
+    background-color: var(--color2);
+    color: var(--color4);
+  }
+
+  .neurological .matrix {
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .neurological .matrix .text {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .neurological .matrix img {
+    width: 100%;
+    height: auto;
+  }
+
+  .neurological .neuropediatrical .matrix .text {
+    padding-right: 0;
+  }
+
+  .neurological-adults .matrix img {
+    width: 100%;
+    height: auto;
+  }
+
+  .neurological .neurological-adults .matrix .text {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* MUSCULO-ESKELETAL */
+
+  .musculoskeletal .index {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .musculoskeletal .index h2 {
+    display: block;
+    text-align: center;
+  }
+
+  .musculoskeletal .index .bubbles {
+    display: none;
+  }
+
+  .musculoskeletal .index .mbl_bubbles {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .musculoskeletal .index .mbl_bubbles div {
+    font-weight: 600;
+    height: 6rem;
+    width: 9rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .musculoskeletal .index .mbl_bubbles .mbl_bubble1 {
+    background-color: var(--color2);
+    color: var(--color4);
+  }
+
+  .musculoskeletal .index .mbl_bubbles .mbl_bubble2 {
+    background-color: var(--color4);
+    color: var(--color2);
+  }
+
+  .musculoskeletal .description {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .musculoskeletal .matrix {
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .musculoskeletal .matrix img {
+    width: 100%;
+    height: auto;
+  }
+
+  .musculoskeletal .musculoskeletal-kids .matrix img {
+    padding-top: 1.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .musculoskeletal .musculoskeletal-kids .description {
+    padding-top: 0;
+  }
+
+  .musculoskeletal .musculoskeletal-adults .matrix img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* PREGNANCY */
+
+  .pregnancy .index {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pregnancy .index h2 {
+    display: block;
+    text-align: center;
+  }
+
+  .pregnancy .index h3 {
+    text-align: start;
+  }
+
+  .pregnancy .subpregnancy .matrix .text {
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .pregnancy .bubbles {
+    display: none;
+  }
+
+  .pregnancy .index .mbl_bubbles {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .pregnancy .index .mbl_bubbles div {
+    font-weight: 600;
+    width: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .pregnancy .index .mbl_bubbles .mbl_bubble1 {
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+
+  .pregnancy .index .mbl_bubbles .mbl_bubble2 {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+
+  .pregnancy .matrix {
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pregnancy .matrix img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pregnancy .matrix .foot {
+    width: 22rem;
+  }
+
+  .pregnancy .description {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pregnancy .post-birth .matrix img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .pregnancy .post-birth .matrix .foot {
+    display: block;
+    margin: 0 auto;
+  }
+}
