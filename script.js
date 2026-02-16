@@ -1144,7 +1144,7 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  const request = await fetch(`/`, {
+  const request = await fetch(`/api/contact`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

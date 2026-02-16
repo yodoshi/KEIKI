@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.post(`/`, async (req, res) => {
+app.post(`api/contact`, async (req, res) => {
   let mailBody = `
   <p><strong><h3>Fecha/s:</h3></strong> ${req.body.fecha}</p>
   <p><strong><h3>Franja/s:</h3></strong></p>
