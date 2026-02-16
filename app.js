@@ -40,6 +40,7 @@ app.post(`/api/contact`, async (req, res) => {
       subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
       html: mailBody,
     });
+    console.log(process.env.RESEND_API_KEY);
     console.log("Respuesta de Resend:", response);
     res.status(200).send("ok");
   } catch (err) {
