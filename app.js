@@ -3,17 +3,10 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 const cors = require("cors");
 require("dotenv").config();
+const { Resend } = require("resend");
 
 const app = express();
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(
   cors({
@@ -42,8 +35,8 @@ app.post(`/api/contact`, async (req, res) => {
   <p><strong>Confirmar por</strong> ${req.body.medio} a/al ${req.body.medio_info}</p>`;
 
   try {
-    await transporter.sendMail({
-      from: "🌸 Keiki Web 🌸",
+    const response = await resend.emails.send({
+      from: process.env.EMAIL_FROM,
       to: "fran600351314@hotmail.com",
       subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
       html: mailBody,
