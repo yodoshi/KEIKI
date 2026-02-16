@@ -43,14 +43,15 @@ app.post(`/api/contact`, async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: "Prueba",
+      from: "🌸 Keiki Web 🌸",
       to: "fran600351314@hotmail.com",
       subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
       html: mailBody,
     });
     res.status(200).send("ok");
   } catch (err) {
-    res.status(500).send("error");
+    console.error("ERROR ENVIANDO EMAIL:", err);
+    res.status(500).send(err.message);
   }
 });
 
