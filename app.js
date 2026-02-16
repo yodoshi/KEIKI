@@ -2,12 +2,17 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 require("dotenv").config();
-const { Resend } = require("resend");
+const { MailerSend, EmailParams, Sender, Recipient } = require("mailersend");
 
 const app = express();
 
-console.log("RESEND KEY:" + process.env.RESEND_API_KEY);
-const resend = new Resend(process.env.RESEND_API_KEY);
+const mailerSend = new MailerSend({
+  apiKey: process.env.API_KEY,
+});
+
+const sentFrom = new Sender("test-r6ke4n1j3k9gon12.mlsender.net", "KEIKI WEB");
+
+const recipients = [new Recipient("fran600351314@hotmail.com", "Your Client")];
 
 app.use(
   cors({
@@ -36,14 +41,16 @@ app.post(`/api/contact`, async (req, res) => {
   <p><strong>Confirmar por</strong> ${req.body.medio} a/al ${req.body.medio_info}</p>`;
 
   try {
-    const response = await resend.emails.send({
-      from: process.env.EMAIL_FROM,
-      to: "fran600351314@hotmail.com",
-      subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
-      html: mailBody,
-    });
+    const emailParams = new EmailParams()
+      .setFrom(sentFrom)
+      .setTo(recipients)
+      .setReplyTo(sentFrom)
+      .setSubject("KEIKI PACIENTE! - Nueva Solicitud de Cita")
+      .setHtml(mailBody);
 
-    console.log("Respuesta de Resend:", response);
+    const response = await mailerSend.email.send(emailParams);
+
+    console.log("Respuesta de MailerSend:", JSON.stringify(response, null, 2));
     res.status(200).send("ok");
   } catch (err) {
     console.error("ERROR ENVIANDO EMAIL:", err);
