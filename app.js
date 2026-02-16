@@ -10,7 +10,10 @@ const mailerSend = new MailerSend({
   apiKey: process.env.API_KEY,
 });
 
-const sentFrom = new Sender("test-r6ke4n1j3k9gon12.mlsender.net", "KEIKI WEB");
+const sentFrom = new Sender(
+  "keiki@test-r6ke4n1j3k9gon12.mlsender.net",
+  "KEIKI WEB"
+);
 
 const recipients = [new Recipient("fran600351314@hotmail.com", "Your Client")];
 
