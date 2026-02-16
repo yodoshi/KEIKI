@@ -1,5 +1,6 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const path = require("path");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -16,12 +17,17 @@ const transporter = nodemailer.createTransport({
 
 app.use(
   cors({
-    origin: "http://127.0.0.1:5502",
+    origin: "*",
     methods: ["POST", "GET"],
   })
 );
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname)));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
 
 app.post(`/`, async (req, res) => {
   let mailBody = `
@@ -48,7 +54,7 @@ app.post(`/`, async (req, res) => {
   }
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App runing on port ${port}`);
 });
