@@ -41,6 +41,7 @@ app.post(`/api/contact`, async (req, res) => {
       subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
       html: mailBody,
     });
+    console.log("Respuesta de Resend:", response);
     res.status(200).send("ok");
   } catch (err) {
     console.error("ERROR ENVIANDO EMAIL:", err);
