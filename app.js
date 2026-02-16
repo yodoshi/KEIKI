@@ -5,6 +5,8 @@ require("dotenv").config();
 const { Resend } = require("resend");
 
 const app = express();
+
+console.log("RESEND KEY:" + process.env.RESEND_API_KEY);
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(
@@ -40,7 +42,7 @@ app.post(`/api/contact`, async (req, res) => {
       subject: "KEIKI PACIENTE! - Nueva Solicitud de Cita",
       html: mailBody,
     });
-    console.log(process.env.RESEND_API_KEY);
+
     console.log("Respuesta de Resend:", response);
     res.status(200).send("ok");
   } catch (err) {
