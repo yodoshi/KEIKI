@@ -1144,16 +1144,13 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  const request = await fetch(
-    `https://keikifisioterapia.es:${process.env.PORT}`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }
-  );
+  const request = await fetch(`/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
 
   const result = await request;
 
