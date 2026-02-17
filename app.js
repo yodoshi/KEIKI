@@ -10,12 +10,11 @@ const mailerSend = new MailerSend({
   apiKey: process.env.API_KEY,
 });
 
-const sentFrom = new Sender(
-  "keiki@test-r6ke4n1j3k9gon12.mlsender.net",
-  "KEIKI WEB"
-);
+const sentFrom = new Sender("user@keikifisioterapia.es", "KEIKI WEB");
 
-const recipients = [new Recipient("fran600351314@hotmail.com", "Your Client")];
+const recipients = [
+  new Recipient("noelia.valiente@keikifisioterapia.es", "Your Client"),
+];
 
 app.use(
   cors({
