@@ -1144,6 +1144,22 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
+  /* const resetForm = function () {
+    const selectedDates = document.getElementById("multiple-dates");
+    const description = document.getElementById("description");
+    const morning = document.getElementById("morning");
+    const afternoon = document.getElementById("afternoon");
+    const contactData = document.getElementById("medium");
+
+    description.value = "";
+    selectedDates.value = "";
+    morning.value = "";
+    label1.classList.remove("clicked");
+    afternoon.value = "";
+    label2.classList.remove("clicked");
+    contactData.value = "";
+  }; */
+
   const request = await fetch(`/api/contact`, {
     method: "POST",
     headers: {
@@ -1163,6 +1179,8 @@ form.addEventListener("submit", async (e) => {
       "Muchas gracias por su solicitud. Contactaremos con usted para confirmar su cita lo antes posible"
     );
   }
+
+  location.reload();
 });
 
 /////////////// CONTACT-INFO ///////////////
@@ -1200,11 +1218,11 @@ ctx13.fillStyle = "#f2bdd6";
 ctx13.textAlign = "center";
 ctx13.textBaseline = "middle";
 
-ctx13.fillText("628 589 365", 220, 153);
+ctx13.fillText("628 589 365", 230, 153);
 
 ctx13.font = "600 20px Quicksand, sans-serif";
 ctx13.fillStyle = "#f2bdd6";
 ctx13.textAlign = "center";
 ctx13.textBaseline = "middle";
 
-ctx13.fillText("noeliavalienteserrano@gmail.com", 210, 200);
+ctx13.fillText("noelia.valiente@keikifisioterapia.es", 220, 200);
