@@ -265,6 +265,8 @@ header h3 {
 
   .disclaimer .rgpd .box h4 {
     font-size: var(--h5-size);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .disclaimer .rgpd .box p {

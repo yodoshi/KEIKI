@@ -1621,6 +1621,11 @@ header h3 {
     border-bottom: solid 1px var(--color4);
   }
 
+  .footer .contact .container #description {
+    width: 20rem;
+    height: 5rem;
+  }
+
   .footer .contact .contact-info {
     text-align: center;
   }
