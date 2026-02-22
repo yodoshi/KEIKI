@@ -1,0 +1,273 @@
+:root {
+  --color1: #f2bdd6;
+  --color2: #a0f2f2;
+  --color3: #177362;
+  --color4: #fff4ba;
+  --color5: #ffffff;
+  --color6: #61d1d1;
+  --h1-size: 55px;
+  --h1-height: ;
+  --h2-size: 35px;
+  --h2-height: ;
+  --h3-size: 25px;
+  --h4-size: 20px;
+  --h5-size: 16px;
+  --h6-size: 10px;
+  /* SPACING */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+@font-face {
+  font-family: "MiFuente"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/Eyesome-Script.otf") format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+@font-face {
+  font-family: "MiFuente2"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/fonnts.com-quiverleafarabiccf-light.otf")
+    format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--color5);
+  z-index: 50;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+img {
+  height: 160px;
+}
+
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h1-size);
+}
+
+header h3 {
+  font-family: "MiFuente";
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h3-size);
+  position: relative;
+  top: 2.5em;
+  left: -2em;
+}
+
+/* NAVBAR */
+.nav-sentinel {
+  height: 1px;
+}
+
+.navbar_container {
+  height: 6em;
+  background-color: #f2bdd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#dropdown {
+  display: none;
+}
+
+#dropdown p:hover {
+  cursor: pointer;
+}
+
+.nav_bar div {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--color5);
+}
+
+.nav_bar div:hover {
+  cursor: pointer;
+  color: var(--color3);
+  transition: 0.5s;
+}
+
+.nav_bar img {
+  display: none;
+  height: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  opacity: 0.9;
+  z-index: 100;
+}
+
+/* DISCLAIMER */
+
+.disclaimer {
+  margin-top: 4rem;
+  text-align: center;
+  background: linear-gradient(var(--color5), var(--color1));
+  /* height: 100vh; */
+}
+
+.disclaimer .tittle {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.disclaimer h3 {
+  font-size: var(--h3-size);
+  font-family: "Quicksand", sans-serif;
+  color: var(--color1);
+}
+
+.rgpd {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.rgpd .box {
+  margin-top: 5rem;
+  width: 80%;
+  max-width: 80%;
+  border: solid 1px var(--color3);
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+}
+
+.rgpd .box h4 {
+  margin-top: 2rem;
+  font-size: var(--h3-size);
+}
+
+.rgpd .box p {
+  text-align: left;
+  font-size: var(--h4-size);
+  padding: 2rem;
+}
+
+@media (max-width: 950px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    max-width: 100vw; /* No exceder el ancho del viewport */
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+  /* HEADER */
+
+  .header-container {
+    margin: 0 auto;
+    max-width: 100vw; /* No exceder el ancho del viewport */
+    overflow-x: hidden;
+  }
+
+  #main {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    height: 7rem;
+    width: fit-content;
+  }
+
+  #main img {
+    transform: scale(0.6, 0.6);
+    display: inline;
+  }
+
+  h1 {
+    font-size: var(--h4-size);
+    display: inline;
+    position: relative;
+    top: -4.3rem;
+    left: -2rem;
+  }
+
+  header h3 {
+    font-family: "MiFuente";
+    font-style: normal;
+    width: fit-content;
+    color: var(--color3);
+    font-size: var(--h4-size);
+    position: relative;
+    top: -4.3rem;
+    left: 14rem;
+  }
+
+  /* NAVBAR */
+
+  nav {
+    display: flex;
+  }
+
+  .displayed {
+    opacity: 1;
+    transform: scaleY(1) !important;
+    z-index: 10;
+  }
+
+  .nav_bar p {
+    font-size: var(--h4-size);
+  }
+
+  /* DISCLAIMER */
+
+  .disclaimer .tittle {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .disclaimer h3 {
+    font-size: var(--h4-size);
+  }
+
+  .disclaimer .rgpd .box h4 {
+    font-size: var(--h5-size);
+  }
+
+  .disclaimer .rgpd .box p {
+    font-size: var(--h5-size);
+  }
+}

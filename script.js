@@ -1021,7 +1021,6 @@ const displayContactMedium = function (medium) {
   let htmlMediumInput = document.getElementById("medium");
   let htmlPrefix = document.getElementById("prefix");
   let htmlIti = document.querySelector(".iti");
-  console.log(htmlMediumInput);
   if (!htmlPrefix && medium === "phone") {
     if (htmlMediumInput) {
       htmlMediumInput.remove();
@@ -1032,6 +1031,7 @@ const displayContactMedium = function (medium) {
     htmlPrefix.name = "iti";
     htmlPrefix.type = "tel";
     htmlPrefix.required = true;
+    htmlPrefix.style = "height: 30px;";
 
     optionsContainer.insertAdjacentElement("afterend", htmlPrefix);
 
@@ -1102,8 +1102,6 @@ const datepicker = new FlexiDatepicker("#multiple-dates", {
     dates = data.dates;
   },
 });
-
-console.log(dates);
 
 /////////////// FORM DATA CAPTURE ///////////////
 
