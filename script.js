@@ -939,8 +939,8 @@ ctx18.fillStyle = "#177362";
 ctx18.textBaseline = "middle";
 
 ctx18.fillText("SESIONES PRESENCIALES", 35, 35);
-ctx18.fillText("Bono x4 ➡️ 230€*", 75, 70);
-ctx18.fillText("Bono x8 ➡️ 440€*", 75, 110);
+ctx18.fillText("Bono x4 ➡️ 250€*", 75, 70);
+ctx18.fillText("Bono x8 ➡️ 480€*", 75, 110);
 
 let canvas19 = document.getElementById("bns_price2");
 let ctx19 = canvas19.getContext("2d");
