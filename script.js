@@ -766,7 +766,7 @@ ctx15.font = "25px Quicksand, sans-serif";
 ctx15.fillStyle = "#177362";
 ctx15.textBaseline = "middle";
 
-ctx15.fillText("Presencial:", 90, 50);
+ctx15.fillText("Individual:", 90, 50);
 ctx15.fillText("50 min ➡️ 65€*", 70, 95);
 
 let canvas16 = document.getElementById("ind_price2");
@@ -809,9 +809,9 @@ ctx16.font = "18px Quicksand, sans-serif";
 ctx16.fillStyle = "#177362";
 ctx16.textBaseline = "middle";
 
-ctx16.fillText("Psicomotricidad individual", 38, 55);
-ctx16.fillText("o grupal:", 113, 75);
-ctx16.fillText("Precio a consultar", 73, 105);
+ctx16.fillText("Grupos de Psicomotricidad:", 38, 50);
+ctx16.fillText("90€/mes", 112, 80);
+ctx16.fillText("1 sesión (40 min)/semana", 45, 110);
 
 // Modal 3
 
@@ -938,7 +938,7 @@ ctx18.font = "18px Quicksand, sans-serif";
 ctx18.fillStyle = "#177362";
 ctx18.textBaseline = "middle";
 
-ctx18.fillText("SESIONES PRESENCIALES", 35, 35);
+ctx18.fillText("SESIONES PRESENCIALES", 45, 35);
 ctx18.fillText("Bono x4 ➡️ 250€*", 75, 70);
 ctx18.fillText("Bono x8 ➡️ 480€*", 75, 110);
 
@@ -982,7 +982,7 @@ ctx19.font = "18px Quicksand, sans-serif";
 ctx19.fillStyle = "#177362";
 ctx19.textBaseline = "middle";
 
-ctx19.fillText("Online (grupos o cursos)", 45, 60);
+ctx19.fillText("Online (grupos o cursos)", 50, 60);
 ctx19.fillText("Precio a consultar**", 75, 100);
 
 /////////////// YOUTUBE VIDEO ///////////////

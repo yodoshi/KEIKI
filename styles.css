@@ -518,7 +518,7 @@ header h3 {
 }
 
 .tariffs #bubble2-2-wrapper::after {
-  content: "SESIONES\A INDIVIDUALES";
+  content: "SESIONES\A PRESENCIALES";
   white-space: pre;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
