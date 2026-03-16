@@ -1,0 +1,515 @@
+:root {
+  --color1: #f2bdd6;
+  --color2: #a0f2f2;
+  --color3: #177362;
+  --color4: #fff4ba;
+  --color5: #ffffff;
+  --color6: #61d1d1;
+  --h1-size: 55px;
+  --h1-height: ;
+  --h2-size: 35px;
+  --h2-height: 45px;
+  --h3-size: 25px;
+  --h4-size: 20px;
+  --h5-size: 16px;
+  --h6-size: 10px;
+  /* SPACING */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+@font-face {
+  font-family: "MiFuente"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/Eyesome-Script.otf") format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+@font-face {
+  font-family: "MiFuente2"; /* nombre que usarás en CSS */
+  src: url("../public/fonts/fonnts.com-quiverleafarabiccf-light.otf")
+    format("opentype");
+  font-weight: normal; /* opcional: normal, bold, etc. */
+  font-style: normal; /* opcional: normal, italic, etc. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--color5);
+  z-index: 50;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mbl-side-bar {
+  position: fixed;
+  height: 100vh;
+  width: 35vw;
+  background-color: var(--color1);
+  z-index: 0;
+  opacity: 0;
+  text-align: center;
+}
+
+#mbl-btn2026 {
+  font-size: var(--h3-size);
+}
+
+.mbl-side-bar .mbl-list {
+  position: absolute;
+  left: -2em;
+  width: 100%;
+  color: var(--color3);
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+.mbl-side-bar .mbl-list .mbl-sublist {
+  padding-left: 3em;
+}
+
+.mbl-sublist li {
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-size: var(--h5-size);
+}
+
+.mbl-side-bar .button {
+  position: absolute;
+  top: 10em;
+  right: -2.7em;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+}
+
+.mbl-side-bar .button:hover {
+  cursor: pointer;
+}
+
+.mbl-side-bar #plus,
+#minus {
+  height: 60%;
+  position: relative;
+  left: 1.2em;
+}
+
+/* HEADER */
+
+.header-container {
+  z-index: 10;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+img {
+  height: 160px;
+}
+
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h1-size);
+}
+
+header h3 {
+  font-family: "MiFuente";
+  font-style: normal;
+  color: var(--color3);
+  font-size: var(--h3-size);
+  position: relative;
+  top: 2.5em;
+  left: -2em;
+}
+
+/* BANNER */
+
+.banner {
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../public/images/3.png);
+  background-position: 50% 55%;
+  background-size: cover;
+  z-index: 10;
+}
+
+h2 {
+  font-family: "MiFuente2";
+  font-weight: 100;
+  font-size: var(--h2-height);
+  color: var(--color5);
+}
+
+/* MAIN */
+
+.main {
+  /* height: 100%; */
+  background: linear-gradient(var(--color5), var(--color4));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+h3 {
+  font-size: var(--h1-size);
+  font-family: "MiFuente";
+  color: var(--color3);
+}
+
+h4 {
+  margin-top: 1rem;
+  font-size: var(--h2-size);
+  font-family: "Quicksand", sans-serif;
+  color: var(--color3);
+  font-weight: 200;
+}
+
+.tittle {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.container {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  /* justify-content: center; */
+  gap: 3rem;
+}
+
+/* BAR */
+
+.bar {
+  width: 20%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+  color: var(--color1);
+  height: fit-content;
+  z-index: 10;
+}
+
+.sublist {
+  margin-left: 1rem;
+  font-size: var(--h4-size);
+}
+
+.sublist li {
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.show {
+  max-height: 200px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* POST */
+
+.content {
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.post {
+  border: solid 1px var(--color3);
+  color: var(--color3);
+}
+
+.header {
+  background-image: var(--image);
+  background-position: var(--img-position);
+  background-size: cover;
+  opacity: 0.5;
+  height: 15rem;
+  border: solid 1px var(--color3);
+}
+
+.header::before {
+  content: var(--before-content);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: var(--color5);
+  position: relative;
+  bottom: -90%;
+  left: 10rem;
+}
+
+.header .photo {
+  border: solid 1px var(--color3);
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  position: relative;
+  bottom: -10rem;
+  left: 2rem;
+  background-image: url(../public/images/Noelia.jpg);
+  background-size: cover;
+  opacity: 2 !important;
+}
+
+.post h4 {
+  font-weight: 800;
+}
+
+.post h4,
+h5,
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+h5 {
+  font-size: var(--h4-size);
+  padding-top: 1rem;
+}
+
+.post p,
+ul {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.text {
+  margin: 2rem;
+  margin-top: 4rem;
+}
+
+li {
+  font-family: "Quicksand", sans-serif;
+}
+
+#malama {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--color3);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  z-index: 10;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--h3-size);
+  color: var(--color4);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.tips {
+  background-color: var(--color4);
+}
+
+.tips p {
+  color: var(--color1);
+  padding-bottom: 1em;
+}
+
+.footer .social-media {
+  padding-bottom: 3em;
+  background-color: var(--color3);
+}
+
+.footer .social-media .sm_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+}
+
+.footer .social-media .sm_icons div {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  border: 3px solid var(--color4);
+  background-color: var(--color4);
+  margin-left: 2em;
+  display: grid;
+  place-items: center;
+}
+
+.footer .social-media .sm_icons div img {
+  height: 60px;
+}
+
+.footer .rgpd {
+  font-weight: 100;
+}
+
+.footer .rgpd p {
+  padding-top: 0;
+  font-size: var(--h5-size);
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 950px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    max-width: 100vw; /* No exceder el ancho del viewport */
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+
+  .mbl-side-bar {
+    left: -35vw;
+    z-index: 20;
+    opacity: 1;
+  }
+
+  .slide {
+    transform: translateX(35vw);
+    transition: 0.5s ease-out;
+  }
+
+  .adjust-plus {
+    margin-left: 1.4em !important;
+  }
+
+  .adjust-btn {
+    right: -2em !important;
+  }
+
+  .no-show {
+    opacity: 0 !important;
+  }
+
+  .show-bar {
+    opacity: 1 !important;
+    transition: 0.5s;
+  }
+
+  /* HEADER */
+
+  .header-container {
+    margin: 0 auto;
+    max-width: 100vw; /* No exceder el ancho del viewport */
+    overflow-x: hidden;
+  }
+
+  #main {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 7rem;
+    width: fit-content;
+  }
+
+  #main img {
+    transform: scale(0.6, 0.6);
+    display: inline;
+  }
+
+  h1 {
+    font-size: var(--h4-size);
+    display: inline;
+    position: relative;
+    top: -4.3rem;
+    left: -2rem;
+  }
+
+  header h3 {
+    font-family: "MiFuente";
+    font-style: normal;
+    width: fit-content;
+    color: var(--color3);
+    font-size: var(--h4-size);
+    position: relative;
+    top: -4.3rem;
+    left: 14rem;
+  }
+
+  /* MAIN */
+
+  .main h3 {
+    font-size: 30px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .main h4 {
+    font-size: var(--h4-size);
+  }
+
+  .header::before {
+    font-size: 10px;
+  }
+
+  /* FOOTER */
+  .social-media .tips p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .social-media .sm_icons {
+    transform: scale(0.7);
+    gap: 2rem;
+  }
+
+  .footer .social-media .sm_icons div {
+    margin-left: 0;
+  }
+}
