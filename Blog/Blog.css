@@ -162,6 +162,7 @@ header h3 {
   background-position: 50% 55%;
   background-size: cover;
   z-index: 10;
+  opacity: 70%;
 }
 
 h2 {

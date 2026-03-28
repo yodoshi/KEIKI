@@ -6,8 +6,10 @@ const bar2026_btn = document.getElementById("btn2026");
 const bar2026_sublist = document.querySelector(".sublist");
 const subbtn_redLight = document.getElementById("LuzRoja");
 const subbtn_chatGPT = document.getElementById("ChatGPT");
+const subbtn_tTime = document.getElementById("tummyTime");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
+const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -15,7 +17,224 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>
+const latestPost = `<h4><u>Tummy Time:</u> el primer gimnasio natural de tu bebé</h4>
+              <p>
+                Durante los primeros meses de vida, el desarrollo del bebé
+                ocurre a una velocidad extraordinaria. Cada pequeño movimiento,
+                cada intento de levantar la cabeza o apoyarse sobre los brazos
+                forma parte de un proceso complejo en el que el sistema nervioso
+                aprende a organizar el cuerpo.
+              </p>
+              <p>
+                En este contexto, existe una práctica sencilla pero muy
+                importante: el <b>tummy time</b>, también conocido como
+                <b>tiempo boca abajo del bebé.</b>
+              </p>
+              <p>
+                El <i>tummy time</i> consiste en colocar al bebé
+                <b>boca abajo mientras está despierto y bajo supervisión</b>,
+                permitiéndole explorar el movimiento desde su propio cuerpo.
+                Aunque pueda parecer solo una postura, en realidad es una de las
+                primeras formas de actividad motora que ayudan al bebé a
+                construir las bases de su desarrollo.
+              </p>
+              <p>
+                Por eso muchos profesionales lo llaman
+                <b>el primer gimnasio natural del bebé.</b>
+              </p>
+              <h5>
+                ¿Qué es el tummy time y por qué es importante para el desarrollo
+                del bebé?
+              </h5>
+              <p>
+                Cuando un bebé pasa tiempo boca abajo, su cuerpo empieza a
+                enfrentarse a pequeños retos motores que estimulan el desarrollo
+                neurológico y muscular.
+              </p>
+              <p>
+                En esta posición, el bebé necesita activar diferentes grupos
+                musculares para levantar la cabeza, apoyarse en los brazos o
+                mirar a su alrededor. Estos pequeños esfuerzos ayudan a
+                fortalecer <b>cuello, hombros, espalda y tronco,</b> estructuras
+                fundamentales para los futuros hitos motores.
+              </p>
+              <p>
+                Además, el tummy time favorece la
+                <b>organización del sistema nervioso</b>, ya que permite
+                integrar información sensorial del movimiento, del equilibrio y
+                de la posición del cuerpo en el espacio.
+              </p>
+              <p>
+                Es, en esencia, una primera experiencia de
+                <b>movimiento activo y exploración del entorno.</b>
+              </p>
+              <h5>Beneficios del tummy time según la evidencia científica</h5>
+              <p>
+                Diversos estudios científicos han analizado los efectos del
+                tiempo boca abajo durante los primeros meses de vida. Los
+                resultados muestran beneficios claros en diferentes áreas del
+                desarrollo infantil.
+              </p>
+              <p>Entre los principales beneficios encontramos:</p>
+              <ul>
+                <li>🌸 Mejora del <b>control cefálico</b></li>
+                <li>🌸 Fortalecimiento de cuello, hombros y tronco</li>
+                <li>
+                  🌸 Menor riesgo de <b>plagiocefalia o braquicefalia posicional</b>
+                </li>
+                <li>
+                  🌸 Mayor facilidad para alcanzar hitos motores como <b>rodar,
+                  girar o gatear</b>
+                </li>
+                <li>
+                  🌸 Relación con una <b>composición corporal</b> más saludable en
+                  etapas posteriores
+                </li>
+              </ul>
+              <p>
+                Las recomendaciones actuales, apoyadas por la
+                <a href="https://www.aap.org/"
+                  ><u><i>American Academy of Pediatrics</i></u></a
+                >, indican que el tiempo boca abajo debería incorporarse
+                <b>desde las primeras semanas de vida</b>, siempre de forma
+                progresiva y adaptada a cada bebé.
+              </p>
+              <h5>¿Cuánto tiempo de tummy time necesita un bebé?</h5>
+              <p>
+                No existe una cifra exacta válida para todos los bebés, pero sí
+                orientaciones aproximadas según la edad.
+              </p>
+              <p><b>0–2 meses:</b></p>
+              <p>
+                Entre 10 y 20 minutos al día, repartidos en pequeños momentos.
+                Puede realizarse sobre el pecho de mamá o papá, sobre el brazo o
+                en una manta.
+              </p>
+              <p><b>2–4 meses:</b></p>
+              <p>
+                Entre 30 y 45 minutos al día, con más tiempo de juego en el
+                suelo.
+              </p>
+              <p><b>4–6 meses:</b></p>
+              <p>
+                Entre 60 y 90 minutos diarios, integrándolo en la rutina de
+                juego.
+              </p>
+              <div style="text-align: center">
+                <p>
+                  "Lo importante no es hacerlo todo seguido, sino
+                  <b>repartirlo en pequeños momentos a lo largo del día."</b>
+                </p>
+              </div>
+              <h5>¿Qué hacer si a mi bebé no le gusta estar boca abajo?</h5>
+              <p>
+                Es bastante habitual que algunos bebés protesten al principio.
+                Estar boca abajo supone un esfuerzo nuevo para su cuerpo.
+              </p>
+              <p>
+                En estos casos, lo más recomendable es empezar
+                <b>con tiempos muy cortos</b>, incluso de unos pocos segundos, e
+                ir aumentando progresivamente. También ayuda colocar juguetes
+                llamativos delante del bebé o interactuar con él mientras está
+                en esta posición.
+              </p>
+              <p>
+                Con el tiempo, muchos bebés empiezan a tolerarlo mejor cuando
+                descubren que desde esa postura pueden
+                <b>mirar, girar la cabeza y explorar el entorno.</b>
+              </p>
+              <h5>Un pequeño momento que construye grandes bases</h5>
+              <p>
+                El desarrollo infantil no ocurre de forma automática ni se puede
+                acelerar, pero sí puede
+                <b>facilitarse creando oportunidades de movimiento.</b>
+              </p>
+              <p>El <i>tummy time</i> es una de ellas.</p>`;
+
+// SIDE BAR
+
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+// ENVIAR EL POST
+
+// Al cargar la Página
+
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 20 de Marzo'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 70%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/tumy-time.png)");
+});
+
+// Al seleccionar un Post determinado
+
+[subbtn_tTime, subbtn_mbl_tTime].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/tumy-time.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 20 de Marzo'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+[subbtn_redLight, subbtn_mbl_redLight].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/Luz_roja.jpg)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 5 de Marzo'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = `<h4>
                 <u>Luz roja y sueño infantil:</u> por qué puede ayudar en los
                 despertares nocturnos
               </h4>
@@ -156,73 +375,6 @@ const latestPost = `<h4>
                 A veces, en el descanso infantil, los detalles más pequeños
                 también cuentan.
               </p>`;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-    sideBarBtn.classList.toggle("adjust-btn");
-    sideBar.classList.toggle("slide");
-    plusSign.classList.toggle("hidden");
-    minusSign.classList.toggle("hidden");
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 5 de Marzo'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 70%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/Luz_roja.jpg)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_redLight, subbtn_mbl_redLight].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/Luz_roja.jpg)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 5 de Marzo'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 70%");
-    postText.innerHTML = latestPost;
   });
 });
 
@@ -359,7 +511,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-[subbtn_mbl_chatGPT, subbtn_mbl_redLight].forEach((e) => {
+[subbtn_mbl_chatGPT, subbtn_mbl_redLight, subbtn_mbl_tTime].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
     minusSign.classList.toggle("hidden");
