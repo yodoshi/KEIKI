@@ -7,9 +7,11 @@ const bar2026_sublist = document.querySelector(".sublist");
 const subbtn_redLight = document.getElementById("LuzRoja");
 const subbtn_chatGPT = document.getElementById("ChatGPT");
 const subbtn_tTime = document.getElementById("tummyTime");
+const subbtn_plasticidad = document.getElementById("plasticidad");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
+const subbtn_mbl_plasticidad = document.getElementById("mbl-plasticidad");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -17,7 +19,152 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4><u>Tummy Time:</u> el primer gimnasio natural de tu bebé</h4>
+const latestPost = `<h4><u>Plasticidad cerebral en bebés:</u> por qué los primeros tres años son oro</h4>
+              <p>
+                Imagina que cada mirada, cada caricia, cada palabra que le das a tu bebé <b>se transforma en arquitectura cerebral.</b><br>
+Sí, lo que hoy parece pequeño o cotidiano, <b>está construyendo literalmente su futuro.</b><br>
+Los primeros tres años no son solo importantes… son <b>oro puro para su cerebro.</b>
+
+              </p>
+              
+              <h5>
+                ¿Qué es la plasticidad cerebral?
+              </h5>
+              <p>
+                La <i>plasticidad cerebral</i> es la <b>capacidad del cerebro de cambiar y reorganizarse</b> a lo largo de la vida, adaptando sus conexiones según lo que experimenta.<br>
+En los bebés, esta capacidad es <b>excepcionalmente alta:</b> sus neuronas forman <b>millones de nuevas conexiones cada segundo</b>, y cada interacción con el entorno —tu voz, un abrazo, un juego— <b>moldea la manera en que su cerebro aprende, siente y se relaciona.</b>
+
+              </p>
+              <p>
+                En otras palabras: la plasticidad cerebral es <b>la herramienta que convierte las experiencias cotidianas en estructuras reales dentro del cerebro.</b><br>
+Es por eso que los primeros años se consideran una ventana de oro del desarrollo, donde el impacto de cada experiencia es más profundo y duradero.
+
+              </p>
+              
+              <h5>Periodos sensibles: ventanas de oro del desarrollo</h5>
+              <p>
+                Los neurocientíficos llaman a estas etapas “periodos sensibles”: momentos en los que el cerebro es <b>más receptivo a la experiencia.</b><br>
+Lo que un bebé experimenta durante los primeros años <b>impacta de manera significativa</b> en su aprendizaje, regulación emocional y formación del vínculo afectivo.
+
+              </p>
+              
+              <p >📌 <b>Dato poderoso</b>: un estudio longitudinal en Bucarest mostró que bebés criados en instituciones sin vínculos afectivos fuertes tienen <b>patrones de actividad cerebral y desarrollo cognitivo retrasados</b> frente a bebés en familias o acogimiento.<br>
+Esto confirma que no solo los genes, sino la calidad de las experiencias tempranas, es crucial.
+</p>
+              
+              <h5>Raíces invisibles que sostienen su futuro</h5>
+              <p>
+                Cada gesto cotidiano construye la arquitectura de su cerebro:
+              </p>
+              <ul>
+                <li>🌸 <b>La mirada atenta</b> que le das mientras juega.</li>
+                <li>🌸 El <b>abrazo que calma</b> y regula su emoción.</li>
+                <li>🌸 Las <b>palabras que nombran emociones y objetos</b>, conectando lenguaje y pensamiento.</li>
+            </ul>
+              <p>Estas “raíces invisibles” serán la base sobre la que crecerá su aprendizaje, resiliencia y vínculo contigo.</p>
+
+              <h5>Lo que vosotros, papás, podéis hacer hoy</h5>
+              <ul>
+                <li>🌸 <b>Observa y responde</b>: cada interacción importa más de lo que imaginas.</li>
+                <li>🌸 <b>Juego libre y contacto físico</b>: no se trata de técnicas complicadas, sino de experiencias seguras y afectuosas.</li>
+                <li>🌸 <b>Presencia consciente</b>: tu calma, atención y consistencia son más poderosas que cualquier estímulo externo.</li>
+            </ul>
+              <p>
+                Recuerda: la <b>plasticidad cerebral permite cambios incluso más adelante</b>, pero estas primeras experiencias son <b>las que ponen las bases más sólidas.</b>
+              </p>
+              <p>
+                Tu mirada, tu juego y tu cariño de hoy son el oro que su cerebro necesita.
+              </p>
+              <p>Fuentes:<br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/15509387/"><u>Knudsen, E. I. (2004)</u></a>. Sensitive periods in the development of the brain and behavior. Journal of Cognitive Neuroscience.<br>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3722610/"><u>Tierney, A. L., & Nelson, C. A. (2009)</u></a>. Brain development and the role of experience in the early years. Zero to Three.<br>
+              <a href="https://developingchild.harvard.edu/"><u>Center on the Developing Child at Harvard University</u></a> – National Scientific Council on the Developing Child.
+              `;
+
+// SIDE BAR
+
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+// ENVIAR EL POST
+
+// Al cargar la Página
+
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 70%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
+});
+
+// Al seleccionar un Post determinado
+
+[subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+[subbtn_tTime, subbtn_mbl_tTime].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/tumy-time.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 20 de Marzo'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = `<h4><u>Tummy Time:</u> el primer gimnasio natural de tu bebé</h4>
               <p>
                 Durante los primeros meses de vida, el desarrollo del bebé
                 ocurre a una velocidad extraordinaria. Cada pequeño movimiento,
@@ -150,76 +297,6 @@ const latestPost = `<h4><u>Tummy Time:</u> el primer gimnasio natural de tu beb�
                 <b>facilitarse creando oportunidades de movimiento.</b>
               </p>
               <p>El <i>tummy time</i> es una de ellas.</p>`;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 20 de Marzo'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 70%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/tumy-time.png)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_tTime, subbtn_mbl_tTime].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/tumy-time.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 20 de Marzo'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 70%");
-    postText.innerHTML = latestPost;
   });
 });
 
@@ -511,7 +588,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-[subbtn_mbl_chatGPT, subbtn_mbl_redLight, subbtn_mbl_tTime].forEach((e) => {
+[
+  subbtn_mbl_chatGPT,
+  subbtn_mbl_redLight,
+  subbtn_mbl_tTime,
+  subbtn_mbl_plasticidad,
+].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
     minusSign.classList.toggle("hidden");
