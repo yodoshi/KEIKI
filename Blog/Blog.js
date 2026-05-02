@@ -8,10 +8,12 @@ const subbtn_redLight = document.getElementById("LuzRoja");
 const subbtn_chatGPT = document.getElementById("ChatGPT");
 const subbtn_tTime = document.getElementById("tummyTime");
 const subbtn_plasticidad = document.getElementById("plasticidad");
+const subbtn_llanto = document.getElementById("llanto");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
 const subbtn_mbl_plasticidad = document.getElementById("mbl-plasticidad");
+const subbtn_mbl_llanto = document.getElementById("mbl-llanto");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -19,7 +21,201 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4><u>Plasticidad cerebral en bebés:</u> por qué los primeros tres años son oro</h4>
+const latestPost = `<h4><u>El llanto del bebé no es un problema:</u> es un lenguaje que estás aprendiendo a escuchar</h4>
+            <h5>
+                Si todos los llantos te suenan igual, no estás fallando…
+              </h5>
+              <p>
+                Al principio, el llanto confunde. Remueve. Abruma.
+Y muchas veces hace que aparezca la sensación incómoda: <i>“¿lo estoy haciendo bien?”</i><br>
+              </p>
+              <p><i>¿Tiene hambre? ¿Sueño? ¿Le pasa algo?</i></p>
+              <p>Y en medio de todo eso, hay algo que pesa más de lo que parece: la sensación de no estar llegando.</p>
+              <p>Pero déjame decirte algo: <b>no es que no lo estés entendiendo… es que nadie te ha enseñado a escucharlo desde aquí.</b></p>
+              
+              <h5>
+                El llanto comienza en el sistema nervioso
+              </h5>
+              <p>
+                Tendemos a pensar que el llanto es una señal simple: necesidad → respuesta → se acaba.
+              </p>
+              <p>
+                Pero en los primeros meses, esto no funciona así.
+              </p>
+              <p>
+                El bebé no solo expresa necesidades. Expresa estados:
+              </p>
+              <ul>
+                <li>🌸 Activación</li>
+                <li>🌸 Desorganización</li>
+                <li>🌸 Dificultad para autorregularse</li>
+            </ul>
+    
+              <p>
+                Por eso, a veces:
+              </p>
+              <ul>
+                <li>🌸 Come… y sigue llorando</li>
+                <li>🌸 Duerme… y se despierta alterado</li>
+                <li>🌸 Está en brazos… y no termina de calmarse</li>
+            </ul>
+              <p>Porque el origen no siempre es externo: a veces pide <b>regulación interna.</b><br>
+Y esto cambia completamente la forma de acompañar.
+</p>
+              <h5>Sí, hay tipos de llanto… pero no son fórmulas exactas</h5>
+              <p>Es probable que hayas escuchado que existen distintos tipos de llanto: hambre, sueño, incomodidad…
+              </p>
+              <p>
+                Y sí, la evidencia muestra que el llanto presenta patrones acústicos diferentes según la situación (ritmo, intensidad, tono):
+              </p>
+              <ul>
+                <li>🌸 Hambre: más rítmico y progresivo</li>
+                <li>🌸 Sueño: más intermitente e irritante</li>
+                <li>🌸 Sobreestimulación: intenso y difícil de modular</li>
+            </ul>
+            <p>
+                Pero ojo: <b>no son categorías cerradas ni universales.</b><br>
+El llanto depende también del estado del bebé, del momento y del entorno.
+              </p>
+              <p>
+                Más que “etiquetar”, lo que realmente importa es:
+              </p>
+              <ul>
+                <li>🌸 Observar el contexto</li>
+                <li>🌸 Leer el lenguaje corporal</li>
+                <li>🌸 Comprender el estado del sistema nervioso</li>
+            </ul>
+            <h5>Del sonido… al significado</h5>
+            <p>
+                El sonido puede dar pistas, pero <b>no es suficiente por sí solo.</b>
+              </p>
+              <ul>
+                <li>🌸 Dos bebés pueden llorar parecido y necesitar cosas distintas.</li>
+                <li>🌸 Un mismo bebé puede llorar diferente por la misma causa.</li>
+            </ul>
+            <p>
+                No porque estés fallando, sino porque <u>el llanto es un fenómeno complejo.</u></b>
+              </p>
+              <p>
+                Esto, lejos de complicarlo, te libera:
+<b>no tienes que acertar un tipo exacto, tienes que aprender a interpretar un conjunto de señales.
+</b></p>
+              <h5>Cómo acompañar sin estrés</h5>
+              <p>
+                No necesitas hacerlo perfecto. Pero sí puedes empezar por aquí:
+              </p>
+              <ul>
+                <li>🌸 <b>Respira y acompaña tu propio ritmo,</b> así tu bebé sentirá calma antes de todo.</li>
+                <li>🌸 <b>Mira antes de actuar,</b> intenta leer su lenguaje y no solo reaccionar al llanto.</li>
+                <li>🌸 <b>Abrázale y acompáñale,</b> física y emocionalmente, incluso cuando parezca que nada funciona.</li>
+                <li>🌸 <b>Sintoniza contigo mismo,</b> porque tu tranquilidad ayuda a regular el suyo.</li>
+            </ul>
+            <p>
+                Porque muchas veces, lo que más necesita tu bebé no es una solución rápida…
+es un adulto que le ayude a regularse.
+              </p>
+              <h5>Cuando comprendes, cambia todo</h5>
+              <p>
+                El cambio no ocurre cuando aciertas siempre, ni cuando el llanto desaparece.
+Ocurre cuando:
+              </p>
+              <p>
+                → dejas de vivirlo como un problema<br>
+                → empiezas a entenderlo como un proceso
+              </p>
+              <p>
+                Ahí baja la exigencia, baja la tensión…
+y aparece algo mucho más importante: <b>la conexión.</b>
+              </p>
+              <p>
+                El llanto no necesita que lo apagues. Necesita que alguien lo escuche de verdad.
+Y eso —aunque ahora no lo parezca— ya estás empezando a hacerlo.
+              </p>`;
+
+// SIDE BAR
+
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+// ENVIAR EL POST
+
+// Al cargar la Página
+
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 2 de Mayo'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 70%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/llanto.png)");
+});
+
+// Al seleccionar un Post determinado
+
+[subbtn_llanto, subbtn_mbl_llanto].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/llanto.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 2 de Mayo'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+[subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = `<h4><u>Plasticidad cerebral en bebés:</u> por qué los primeros tres años son oro</h4>
               <p>
                 Imagina que cada mirada, cada caricia, cada palabra que le das a tu bebé <b>se transforma en arquitectura cerebral.</b><br>
 Sí, lo que hoy parece pequeño o cotidiano, <b>está construyendo literalmente su futuro.</b><br>
@@ -80,76 +276,6 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
               <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3722610/"><u>Tierney, A. L., & Nelson, C. A. (2009)</u></a>. Brain development and the role of experience in the early years. Zero to Three.<br>
               <a href="https://developingchild.harvard.edu/"><u>Center on the Developing Child at Harvard University</u></a> – National Scientific Council on the Developing Child.
               `;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 70%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 70%");
-    postText.innerHTML = latestPost;
   });
 });
 
@@ -593,6 +719,7 @@ document.addEventListener("DOMContentLoaded", () => {
   subbtn_mbl_redLight,
   subbtn_mbl_tTime,
   subbtn_mbl_plasticidad,
+  subbtn_mbl_llanto,
 ].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
