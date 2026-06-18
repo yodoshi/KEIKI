@@ -9,11 +9,13 @@ const subbtn_chatGPT = document.getElementById("ChatGPT");
 const subbtn_tTime = document.getElementById("tummyTime");
 const subbtn_plasticidad = document.getElementById("plasticidad");
 const subbtn_llanto = document.getElementById("llanto");
+const subbtn_cojas = document.getElementById("cojas");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
 const subbtn_mbl_plasticidad = document.getElementById("mbl-plasticidad");
 const subbtn_mbl_llanto = document.getElementById("mbl-llanto");
+const subbtn_mbl_cojas = document.getElementById("mbl-cojas");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -21,7 +23,174 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4><u>El llanto del bebé no es un problema:</u> es un lenguaje que estás aprendiendo a escuchar</h4>
+const latestPost = `<h4>No lo cojas mucho que se malacostumbra… ¿y si te dijera que es justo lo contrario?</h4>
+            <h5>
+                Una reflexión personal con evidencia
+              </h5>
+              <p>
+                Cuando alguien me dice <i>“no lo cojas tanto, se va a malacostumbrar”</i>, siento un escalofrío.<br>
+              </p>
+              <p>Desde mi experiencia clínica y desde la neurociencia del desarrollo, <b>coger a un bebé, atender su llanto y responder a sus necesidades, no malacostumbra. Lo nutre.</b></p>
+              <p>El contacto físico y la respuesta sensible son la base sobre la que tu bebé construye su cerebro, su sistema de regulación emocional y la seguridad en el vínculo. No es teoría: es evidencia.</p>
+              <p>He visto padres primerizos llenos de dudas, con miedo de “consentir demasiado”. Y la realidad es clara: <b>los bebés que reciben atención y contacto sensibles crecen más seguros y confiados,</b> tanto en consulta como en la vida diaria.</p>
+              
+              <h5>
+                Lo que dice la ciencia
+              </h5>
+              <p>
+                Los estudios respaldan esto de forma contundente:
+              </p>
+              <ul>
+                <li>🌸 <b><a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12060749/"
+                        >Narvaez et al. (2013)</a></b> mostraron que los bebés que recibieron más contacto físico y respuestas sensibles a su llanto desarrollaron mayor seguridad y apego seguro a los 12 meses.</li>
+                <li>🌸 <b><a
+                        href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8624.1990.tb02888.x"
+                        >Anisfeld et al. (1990)</a></b> demostraron que el porteo y el contacto constante favorecen la <u>formación de vínculos afectivos estables.</u></li>
+                <li>🌸 <b><a
+                        href="https://www.tandfonline.com/doi/abs/10.1080/15295192.2012.683342"
+                        >Feldman (2012)</a></b> explica que la sincronía cuidador-bebé —a través del contacto, la mirada y la respuesta al llanto— regula el <u>sistema de estrés del bebé</u> y potencia su desarrollo emocional.</li>
+            </ul>
+    
+              <p>
+                En pocas palabras: atender al llanto, abrazar, coger, mecer… <b>no estropea al bebé, lo fortalece.</b>
+              </p>
+              
+              <h5>Mi experiencia clínica y cotidiana</h5>
+              <p>En consulta, he observado casos muy claros:
+              </p>
+              <ul>
+                <li>🌸 Bebés que lloraban mucho durante horas, y tras unos días de porteo sensible y atención al llanto, <b>empezaron a calmarse solos más rápido.</b></li>
+                <li>🌸 Padres que temían “malacostumbrar” a sus hijos y que, al cambiar la mirada y responder con calma, <b>descubrieron que el vínculo mejoraba y la ansiedad de ambos disminuía.</b></li>
+            </ul>
+            <p>
+                El contacto físico y emocional no genera dependencia negativa. Genera <b>confianza, seguridad y aprendizaje de regulación emocional.</b>
+              </p>
+            <h5>Por qué el mito sigue vivo</h5>
+            <p>
+                Vivimos rodeados de viejos mantras:</b>
+              </p>
+            <p>
+                <i>“No lo cojas, que se malacostumbra”</i>
+              </p>
+              <p>
+                <i>“Déjalo llorar un poco, que aprenda a calmarse”</i>
+              </p>
+              <p>
+                La evidencia actual demuestra que estos consejos no solo están desfasados, sino que pueden <b>aumentar el estrés del bebé y del cuidador,</b> y afectar la regulación emocional temprana.</p>
+                <p><b>El llanto no es manipulación,</b> es comunicación y necesidad de regulación.
+Responder de manera sensible es, literalmente, <i>una inversión en su desarrollo cerebral y emocional.</i>
+</p>
+            <p>No necesitas hacerlo perfecto. Pero sí puedes empezar por aquí:</p>
+              <ul>
+                <li>🌸 Baja tu ritmo</li>
+                <li>🌸 Observa antes de actuar</li>
+                <li>🌸 Sostén al bebé física y emocionalmente</li>
+                <li>🌸 Regula tu propio estado</li>
+            </ul>
+            <p>
+                Porque muchas veces, lo que más necesita tu bebé no es una solución rápida… <b>es un adulto que le ayude a regularse.</b>
+              </p>
+              <p>
+                Con pequeños gestos, como responder a su llanto o portearle cuando está alterado, estás enseñándole a <b>confiar y a autorregularse.</b>
+              </p>
+              <h5>Reflexión final</h5>
+              <p>
+                Cuando dejamos de medir cada gesto con miedo a “malacostumbrar”, empezamos a ver que <b>todo contacto que damos es aprendizaje y vínculo.</b>
+              </p>
+              <p>
+                Responder al llanto no debilita, fortalece.<br>
+                Abrazar no sobreprotege, enseña seguridad.<br>
+                Escuchar no cansa, construye confianza.<br>
+              </p>
+              <p>
+                <b>Donde se comprende para cuidar, donde se cuida para florecer.</b>
+              </p>`;
+
+// SIDE BAR
+
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+// ENVIAR EL POST
+
+// Al cargar la Página
+
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 20%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/cojas-img.png)");
+});
+
+// Al seleccionar un Post determinado
+
+[subbtn_cojas, subbtn_mbl_cojas].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/cojas-img.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 20%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+[subbtn_llanto, subbtn_mbl_llanto].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/llanto.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 2 de Mayo'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 70%");
+    postText.innerHTML = `<h4><u>El llanto del bebé no es un problema:</u> es un lenguaje que estás aprendiendo a escuchar</h4>
             <h5>
                 Si todos los llantos te suenan igual, no estás fallando…
               </h5>
@@ -131,76 +300,81 @@ y aparece algo mucho más importante: <b>la conexión.</b>
                 El llanto no necesita que lo apagues. Necesita que alguien lo escuche de verdad.
 Y eso —aunque ahora no lo parezca— ya estás empezando a hacerlo.
               </p>`;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
   });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
 });
 
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 2 de Mayo'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 70%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/llanto.png)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_llanto, subbtn_mbl_llanto].forEach((e) => {
+[subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
   e.addEventListener("click", () => {
     document
       .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/llanto.png)");
+      .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
     document
       .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 2 de Mayo'");
+      .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
     document
       .querySelector(".header")
       .style.setProperty("--img-position", "center 70%");
-    postText.innerHTML = latestPost;
+    postText.innerHTML = `<h4><u>Plasticidad cerebral en bebés:</u> por qué los primeros tres años son oro</h4>
+              <p>
+                Imagina que cada mirada, cada caricia, cada palabra que le das a tu bebé <b>se transforma en arquitectura cerebral.</b><br>
+Sí, lo que hoy parece pequeño o cotidiano, <b>está construyendo literalmente su futuro.</b><br>
+Los primeros tres años no son solo importantes… son <b>oro puro para su cerebro.</b>
+
+              </p>
+              
+              <h5>
+                ¿Qué es la plasticidad cerebral?
+              </h5>
+              <p>
+                La <i>plasticidad cerebral</i> es la <b>capacidad del cerebro de cambiar y reorganizarse</b> a lo largo de la vida, adaptando sus conexiones según lo que experimenta.<br>
+En los bebés, esta capacidad es <b>excepcionalmente alta:</b> sus neuronas forman <b>millones de nuevas conexiones cada segundo</b>, y cada interacción con el entorno —tu voz, un abrazo, un juego— <b>moldea la manera en que su cerebro aprende, siente y se relaciona.</b>
+
+              </p>
+              <p>
+                En otras palabras: la plasticidad cerebral es <b>la herramienta que convierte las experiencias cotidianas en estructuras reales dentro del cerebro.</b><br>
+Es por eso que los primeros años se consideran una ventana de oro del desarrollo, donde el impacto de cada experiencia es más profundo y duradero.
+
+              </p>
+              
+              <h5>Periodos sensibles: ventanas de oro del desarrollo</h5>
+              <p>
+                Los neurocientíficos llaman a estas etapas “periodos sensibles”: momentos en los que el cerebro es <b>más receptivo a la experiencia.</b><br>
+Lo que un bebé experimenta durante los primeros años <b>impacta de manera significativa</b> en su aprendizaje, regulación emocional y formación del vínculo afectivo.
+
+              </p>
+              
+              <p >📌 <b>Dato poderoso</b>: un estudio longitudinal en Bucarest mostró que bebés criados en instituciones sin vínculos afectivos fuertes tienen <b>patrones de actividad cerebral y desarrollo cognitivo retrasados</b> frente a bebés en familias o acogimiento.<br>
+Esto confirma que no solo los genes, sino la calidad de las experiencias tempranas, es crucial.
+</p>
+              
+              <h5>Raíces invisibles que sostienen su futuro</h5>
+              <p>
+                Cada gesto cotidiano construye la arquitectura de su cerebro:
+              </p>
+              <ul>
+                <li>🌸 <b>La mirada atenta</b> que le das mientras juega.</li>
+                <li>🌸 El <b>abrazo que calma</b> y regula su emoción.</li>
+                <li>🌸 Las <b>palabras que nombran emociones y objetos</b>, conectando lenguaje y pensamiento.</li>
+            </ul>
+              <p>Estas “raíces invisibles” serán la base sobre la que crecerá su aprendizaje, resiliencia y vínculo contigo.</p>
+
+              <h5>Lo que vosotros, papás, podéis hacer hoy</h5>
+              <ul>
+                <li>🌸 <b>Observa y responde</b>: cada interacción importa más de lo que imaginas.</li>
+                <li>🌸 <b>Juego libre y contacto físico</b>: no se trata de técnicas complicadas, sino de experiencias seguras y afectuosas.</li>
+                <li>🌸 <b>Presencia consciente</b>: tu calma, atención y consistencia son más poderosas que cualquier estímulo externo.</li>
+            </ul>
+              <p>
+                Recuerda: la <b>plasticidad cerebral permite cambios incluso más adelante</b>, pero estas primeras experiencias son <b>las que ponen las bases más sólidas.</b>
+              </p>
+              <p>
+                Tu mirada, tu juego y tu cariño de hoy son el oro que su cerebro necesita.
+              </p>
+              <p>Fuentes:<br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/15509387/"><u>Knudsen, E. I. (2004)</u></a>. Sensitive periods in the development of the brain and behavior. Journal of Cognitive Neuroscience.<br>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3722610/"><u>Tierney, A. L., & Nelson, C. A. (2009)</u></a>. Brain development and the role of experience in the early years. Zero to Three.<br>
+              <a href="https://developingchild.harvard.edu/"><u>Center on the Developing Child at Harvard University</u></a> – National Scientific Council on the Developing Child.
+              `;
   });
 });
 
