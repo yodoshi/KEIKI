@@ -10,12 +10,14 @@ const subbtn_tTime = document.getElementById("tummyTime");
 const subbtn_plasticidad = document.getElementById("plasticidad");
 const subbtn_llanto = document.getElementById("llanto");
 const subbtn_cojas = document.getElementById("cojas");
+const subbtn_tapar = document.getElementById("tapar");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
 const subbtn_mbl_plasticidad = document.getElementById("mbl-plasticidad");
 const subbtn_mbl_llanto = document.getElementById("mbl-llanto");
 const subbtn_mbl_cojas = document.getElementById("mbl-cojas");
+const subbtn_mbl_tapar = document.getElementById("mbl-tapar");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -23,7 +25,127 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>No lo cojas mucho que se malacostumbra… ¿y si te dijera que es justo lo contrario?</h4>
+const latestPost = `<h4>Tapar completamente al bebé en el carrito, ¿protección o riesgo?</h4>
+              <p>
+                En muchas ocasiones de <b>mi día a día</b> veo bebés completamente tapadxs en sus carritos. Algunxs por frío, otros para que no les dé el sol. Y me hace pensar… <b>¿a veces lo que creemos protección puede ser un riesgo sin darnos cuenta?</b>
+              </p>
+              <p>Como fisioterapeuta especializada en infancia, cada pequeño detalle cuenta. Pasear con tu bebé no es solo un momento de salida, también es <b>una oportunidad para cuidar su bienestar y su desarrollo desde lo más básico</b></p>
+              
+              <h5>
+                Los bebés no regulan bien la temperatura
+              </h5>
+              <p>
+                Los primeros meses, lxs bebés <b>no controlan completamente su temperatura corporal.</b> Su sistema de termorregulación todavía está en desarrollo, y cubrirlxs demasiado puede <b>sobrecalentarlos muy rápido</b>, incluso aunque el día parezca templado.
+Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar su respiración y aumentar el riesgo de golpe de calor</b>. No se trata de alarmarte, sino de ayudarte a <b>prevenir situaciones que podemos evitar con pequeños gestos.</b>
+              </p>
+              <h5>
+                Los riesgos de taparlxs sin ventilación
+              </h5>
+              <ul>
+                <li>🌸 <b>Acumulación de CO₂:</b> respirar su propio aire exhalado puede afectar su oxigenación. </li>
+                <li>🌸 <b>Golpe de calor:</b> incluso sin sol directo, cubrirlxs demasiado aumenta la temperatura corporal de manera peligrosa. 
+                <li>🌸 <b>Dificultad respiratoria:</b> tapar cara o cabeza impide que respiren con normalidad. 
+            </ul>
+              
+              <h5>Cómo pasear de forma cómoda y segura</h5>
+              <p>Con pequeños cambios, puedes transformar el paseo en un momento seguro y agradable:</p>
+              <ul>
+                <li>🌸 <b>Ropa ligera y transpirable:</b> evita capas innecesarias o tejidos gruesos. </li>
+                <li>🌸 <b>Capotas ventiladas o con protección solar:</b> protegen del sol sin impedir la circulación de aire.</li>
+                <li>🌸 <b>Revisar nuca y espalda:</b> la temperatura de la nuca te dice mucho más que manos o pies; si está caliente o sudorosa, ventila un momento.</li>
+                <li>🌸 <b>Plástico protector en días de lluvia:</b> sí, pero dejando siempre espacios abiertos para que respire, y nunca colocar mantas encima dentro del plástico.</li>
+            </ul>
+            
+            <h5>Reflexión Keiki</h5>
+            <p>
+                Cada paseo es mucho más que salir a la calle. Es una <b>oportunidad para cuidar su bienestar desde lo más básico,</b> para que se sienta segurox cómodx y confiadx en su entorno. A veces, <b>menos es más:</b> no necesitamos taparlxs totalmente para protegerlxs, sino <b>estar atentxs a sus señales y ajustar nuestro cuidado con sentido.</b>
+              </p>
+            `;
+
+// SIDE BAR
+
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+// ENVIAR EL POST
+
+// Al cargar la Página
+
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 9 de Julio'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 50%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/tapar.png)");
+});
+
+// Al seleccionar un Post determinado
+
+[subbtn_tapar, subbtn_mbl_tapar].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/tapar.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 9 de Julio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 50%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+[subbtn_cojas, subbtn_mbl_cojas].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/cojas-img.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 20%");
+    postText.innerHTML = `<h4>No lo cojas mucho que se malacostumbra… ¿y si te dijera que es justo lo contrario?</h4>
             <h5>
                 Una reflexión personal con evidencia
               </h5>
@@ -106,76 +228,6 @@ Responder de manera sensible es, literalmente, <i>una inversión en su desarroll
               <p>
                 <b>Donde se comprende para cuidar, donde se cuida para florecer.</b>
               </p>`;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 20%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/cojas-img.png)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_cojas, subbtn_mbl_cojas].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/cojas-img.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 20%");
-    postText.innerHTML = latestPost;
   });
 });
 
@@ -894,6 +946,7 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
   subbtn_mbl_tTime,
   subbtn_mbl_plasticidad,
   subbtn_mbl_llanto,
+  subbtn_mbl_tapar,
 ].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
