@@ -102,9 +102,10 @@ Con <b>pequeños cambios en la postura y supervisión diaria</b>, podemos acompa
             </p>
             <p>
             Fuentes:<br>
-            <a href="">•	Jung, et al. (2020). Positional plagiocephaly: insights into prevalence, diagnosis, and non surgical therapy. </a><br>
-            <a href="">•	Inchingolo, et al. (2022). Non surgical management and outcomes of positional plagiocephaly.  </a><br>
-            <a href="">•	Children’s Hospital Boston (2021). Clinical considerations for deformational plagiocephaly and helmet therapy.  </a>
+            <a href="https://www.dmtjournal.org/dergi/pozisyonel-plagiosefali-tanim-tani-ve-tedavi20251220092616.pdf">•	Jung, et al. (2020). Positional plagiocephaly: insights into prevalence, diagnosis, and non surgical therapy. </a><br>
+            <a href="https://revistasanitariadeinvestigacion.com/plagiocefalia-posicional-tratamiento-fisioterapeutico-articulo-monografico/">•	Macipe Gascón B, Gil Serrano C, Orós Ribes EP, et al. Plagiocefalia posicional: tratamiento fisioterapéutico. Revista Sanitaria de Investigación. 2022;3(8).
+</a><br>
+            <a href="https://revistasanitariadeinvestigacion.com/prevencion-primaria-de-la-plagiocefalia-posicional-en-lactantes/">•	Prevención primaria de la plagiocefalia posicional en lactantes. Revista Sanitaria de Investigación. </a>
             </p>
 
             `;
