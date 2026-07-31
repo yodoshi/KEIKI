@@ -11,6 +11,7 @@ const subbtn_plasticidad = document.getElementById("plasticidad");
 const subbtn_llanto = document.getElementById("llanto");
 const subbtn_cojas = document.getElementById("cojas");
 const subbtn_tapar = document.getElementById("tapar");
+const subbtn_deformidades = document.getElementById("deformidades");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
@@ -18,6 +19,7 @@ const subbtn_mbl_plasticidad = document.getElementById("mbl-plasticidad");
 const subbtn_mbl_llanto = document.getElementById("mbl-llanto");
 const subbtn_mbl_cojas = document.getElementById("mbl-cojas");
 const subbtn_mbl_tapar = document.getElementById("mbl-tapar");
+const subbtn_mbl_deformidades = document.getElementById("mbl-deformidades");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -25,7 +27,229 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>Tapar completamente al bebé en el carrito, ¿protección o riesgo?</h4>
+const latestPost = `<h4>Deformidades craneales en bebés: qué son, cuándo preocuparse y cómo actuar</h4>
+              <p>¿Sabías que no todas las cabecitas planas o asimétricas significan lo mismo? Algunas se moldean solas con el tiempo, otras necesitan acompañamiento especializado… incluso hay deformidades que se originan antes de nacer.
+              </p>
+              <p>En esta entrada, te cuento cómo distinguirlas y qué nos dice la evidencia científica sobre cómo actuar, para que observes sin alarmarte y cuides el desarrollo de tu peque de forma segura.</p>
+              
+              <h5>
+                Cómo se forma el cráneo del bebé
+              </h5>
+              <p>
+                El cráneo del bebé está formado por <b>huesos separados por suturas flexibles</b>, que permiten adaptarse al parto y al crecimiento cerebral.
+Estas suturas pueden cerrarse prematuramente (<b>craneosinostosis</b>) o verse afectadas por <b>factores intrauterinos</b> (como la posición mantenida en el útero) o <b>posturales tras el nacimiento</b> (como ocurre en la plagiocefalia posicional).
+Identificar de dónde viene la asimetría es clave para saber cuándo <b>solo acompañar con posicionamiento</b> y cuándo <b>derivar para valoración médica.</b>
+
+              </p>
+              <h5>
+                Craneosinostosis: deformidades sinostóticas
+              </h5>
+              <ul>
+                <li>🌸 Es poco frecuente: <b>1 de cada 2.000-2.500 nacimientos</b> (Kabbani, AAFP 2004).</li>
+                <li>🌸 Se debe a la <b>fusión prematura de una o varias suturas craneales</b>, lo que impide el crecimiento normal del cráneo.</li>
+                <li>🌸 Requiere <b>valoración médica y quirúrgica</b> por neurocirugía o cirugía plástica pediátrica. </li>
+                <li>🌸 Suele presentar <b>asimetrías marcadas</b>, desplazamiento de orejas y órbitas oculares, y <b>no mejora con cambios posturales</b>. </li>
+            </ul>
+              
+              <h5>Deformidades por compresión intrauterina</h5>
+              <p>Algunas asimetrías pueden originarse <b>antes de nacer</b>, por falta de espacio o posición mantenida del feto:</p>
+              <ul>
+                <li>🌸 Embarazo múltiple,</li>
+                <li>🌸 Pelvis estrecha,</li>
+                <li>🌸 Parto prolongado o instrumentado,</li>
+                <li>🌸 Primogénito,</li>
+                <li>🌸 Prematuridad...</li>
+              </ul>
+              <p>
+              Estas presiones <b>pueden dejar leves asimetrías que mejoran con el tiempo</b> y la movilidad.
+En ocasiones, pueden predisponer a <b>deformidades posicionales posteriores</b>.
+              </p>
+            
+            <h5>Deformidades posicionales postnatales: las más frecuentes</h5>
+            <p>
+            Representan <b>más del 80–90% de las asimetrías craneales en lactantes</b> y suelen aparecer durante los <b>primeros meses de vida</b>, cuando la cabeza pasa mucho tiempo apoyada en la misma posición.
+            </p>
+            <p>
+            En 1992, la Academia Americana de Pediatría recomendó <b>dormir boca arriba</b> para reducir la muerte súbita, lo que <b>disminuyó la mortalidad en un 40%</b>, pero provocó un aumento significativo de plagiocefalia posicional, alcanzando una <b>prevalencia mundial del 46,6%</b>.
+            </p>
+            <p>
+            Estas deformidades se asocian con:
+            </p>
+            <ul>
+              <li>🌸 Preferencia postural o tortícolis congénita </li>
+              <li>🌸 Reflujo o hipotonía (el bebé evita estar boca abajo</li>
+              <li>🌸 Falta de tiempo en <b>tummy time</b> </li>
+              <li>🌸 Prematuridad (cráneo más maleable) </li>
+            </ul>
+            <h5>Cómo prevenir y tratar las deformidades posicionales</h5>
+            <p>
+            El <b>mejor tratamiento</b> es la prevención y la intervención temprana:
+            </p>
+            <ul>
+              <li>🌸 Cambios posturales frecuentes durante el día  </li>
+              <li>🌸 Estimulación motora y <b>tummy time</b> supervisado </li>
+              <li>🌸 Estimular la rotación de la cabecita hacia ambos lados </li>
+              <li>🌸 Uso del porteo para variar apoyos  </li>
+              <li>🌸 En algunos casos moderados o severos de deformidad posicional, <b>puede valorarse el uso de órtesis craneales</b> como parte del abordaje clínico. Sin embargo, la evidencia científica muestra que los resultados son <b>variables</b> en cuanto a eficacia y beneficio funcional, especialmente cuando las medidas posturales se implementan de forma temprana y consistente (Jung et al., 2020; Inchingolo et al., 2022; Children’s Hospital Boston, 2021). </li>
+            </ul>
+            <p>
+            <b>Importante:</b> No hay evidencia robusta de que la plagiocefalia posicional cause retraso cognitivo o neurológico en lactantes sin otros factores asociados.
+            </p>
+            <h5>Recuerda, observar no es alarmarse</h5>
+            <p>
+            El c<b>ráneo del bebé se adapta</b>, pero también nos habla.
+Con <b>pequeños cambios en la postura y supervisión diaria</b>, podemos acompañar su desarrollo de forma segura, evitando preocupaciones innecesarias.
+            </p>
+            <p>
+            Fuentes:<br>
+            <a href="">•	Jung, et al. (2020). Positional plagiocephaly: insights into prevalence, diagnosis, and non surgical therapy. </a><br>
+            <a href="">•	Inchingolo, et al. (2022). Non surgical management and outcomes of positional plagiocephaly.  </a><br>
+            <a href="">•	Children’s Hospital Boston (2021). Clinical considerations for deformational plagiocephaly and helmet therapy.  </a>
+            </p>
+
+            `;
+
+/* SIDE BAR */
+
+// Mostrar Menú Lateral
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+// Ocultar Menú Lateral
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+/*  ENVIAR EL POST */
+
+// Al cargar la Página
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 31 de Julio'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 75%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/deformidadesImg.png)");
+});
+
+// Al seleccionar un Post determinado
+
+// Deformidades Craneales
+[subbtn_deformidades, subbtn_mbl_deformidades].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty(
+        "--image",
+        "url(../public/images/deformidadesImg.png)"
+      );
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 31 de Julio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 75%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+// ¿Lo tapo?
+[subbtn_tapar, subbtn_mbl_tapar].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/tapar.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 9 de Julio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 50%");
+    postText.innerHTML = `<h4>Tapar completamente al bebé en el carrito, ¿protección o riesgo?</h4>
+    <p>
+      En muchas ocasiones de <b>mi día a día</b> veo bebés completamente tapadxs en sus carritos. Algunxs por frío, otros para que no les dé el sol. Y me hace pensar… <b>¿a veces lo que creemos protección puede ser un riesgo sin darnos cuenta?</b>
+    </p>
+    <p>Como fisioterapeuta especializada en infancia, cada pequeño detalle cuenta. Pasear con tu bebé no es solo un momento de salida, también es <b>una oportunidad para cuidar su bienestar y su desarrollo desde lo más básico</b></p>
+    
+    <h5>
+      Los bebés no regulan bien la temperatura
+    </h5>
+    <p>
+      Los primeros meses, lxs bebés <b>no controlan completamente su temperatura corporal.</b> Su sistema de termorregulación todavía está en desarrollo, y cubrirlxs demasiado puede <b>sobrecalentarlos muy rápido</b>, incluso aunque el día parezca templado.
+Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar su respiración y aumentar el riesgo de golpe de calor</b>. No se trata de alarmarte, sino de ayudarte a <b>prevenir situaciones que podemos evitar con pequeños gestos.</b>
+    </p>
+    <h5>
+      Los riesgos de taparlxs sin ventilación
+    </h5>
+    <ul>
+      <li>🌸 <b>Acumulación de CO₂:</b> respirar su propio aire exhalado puede afectar su oxigenación. </li>
+      <li>🌸 <b>Golpe de calor:</b> incluso sin sol directo, cubrirlxs demasiado aumenta la temperatura corporal de manera peligrosa. 
+      <li>🌸 <b>Dificultad respiratoria:</b> tapar cara o cabeza impide que respiren con normalidad. 
+  </ul>
+    
+    <h5>Cómo pasear de forma cómoda y segura</h5>
+    <p>Con pequeños cambios, puedes transformar el paseo en un momento seguro y agradable:</p>
+    <ul>
+      <li>🌸 <b>Ropa ligera y transpirable:</b> evita capas innecesarias o tejidos gruesos. </li>
+      <li>🌸 <b>Capotas ventiladas o con protección solar:</b> protegen del sol sin impedir la circulación de aire.</li>
+      <li>🌸 <b>Revisar nuca y espalda:</b> la temperatura de la nuca te dice mucho más que manos o pies; si está caliente o sudorosa, ventila un momento.</li>
+      <li>🌸 <b>Plástico protector en días de lluvia:</b> sí, pero dejando siempre espacios abiertos para que respire, y nunca colocar mantas encima dentro del plástico.</li>
+  </ul>
+  
+  <h5>Reflexión Keiki</h5>
+  <p>
+      Cada paseo es mucho más que salir a la calle. Es una <b>oportunidad para cuidar su bienestar desde lo más básico,</b> para que se sienta segurox cómodx y confiadx en su entorno. A veces, <b>menos es más:</b> no necesitamos taparlxs totalmente para protegerlxs, sino <b>estar atentxs a sus señales y ajustar nuestro cuidado con sentido.</b>
+    </p>
+  `;
+  });
+});
+
+// No lo cojas
+[subbtn_cojas, subbtn_mbl_cojas].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/cojas-img.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 20%");
+    postText.innerHTML = `<h4>Tapar completamente al bebé en el carrito, ¿protección o riesgo?</h4>
               <p>
                 En muchas ocasiones de <b>mi día a día</b> veo bebés completamente tapadxs en sus carritos. Algunxs por frío, otros para que no les dé el sol. Y me hace pensar… <b>¿a veces lo que creemos protección puede ser un riesgo sin darnos cuenta?</b>
               </p>
@@ -61,176 +285,10 @@ Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar 
                 Cada paseo es mucho más que salir a la calle. Es una <b>oportunidad para cuidar su bienestar desde lo más básico,</b> para que se sienta segurox cómodx y confiadx en su entorno. A veces, <b>menos es más:</b> no necesitamos taparlxs totalmente para protegerlxs, sino <b>estar atentxs a sus señales y ajustar nuestro cuidado con sentido.</b>
               </p>
             `;
-
-// SIDE BAR
-
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-// ENVIAR EL POST
-
-// Al cargar la Página
-
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 9 de Julio'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 50%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/tapar.png)");
-});
-
-// Al seleccionar un Post determinado
-
-[subbtn_tapar, subbtn_mbl_tapar].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/tapar.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 9 de Julio'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 50%");
-    postText.innerHTML = latestPost;
   });
 });
 
-[subbtn_cojas, subbtn_mbl_cojas].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/cojas-img.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 19 de Junio'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 20%");
-    postText.innerHTML = `<h4>No lo cojas mucho que se malacostumbra… ¿y si te dijera que es justo lo contrario?</h4>
-            <h5>
-                Una reflexión personal con evidencia
-              </h5>
-              <p>
-                Cuando alguien me dice <i>“no lo cojas tanto, se va a malacostumbrar”</i>, siento un escalofrío.<br>
-              </p>
-              <p>Desde mi experiencia clínica y desde la neurociencia del desarrollo, <b>coger a un bebé, atender su llanto y responder a sus necesidades, no malacostumbra. Lo nutre.</b></p>
-              <p>El contacto físico y la respuesta sensible son la base sobre la que tu bebé construye su cerebro, su sistema de regulación emocional y la seguridad en el vínculo. No es teoría: es evidencia.</p>
-              <p>He visto padres primerizos llenos de dudas, con miedo de “consentir demasiado”. Y la realidad es clara: <b>los bebés que reciben atención y contacto sensibles crecen más seguros y confiados,</b> tanto en consulta como en la vida diaria.</p>
-              
-              <h5>
-                Lo que dice la ciencia
-              </h5>
-              <p>
-                Los estudios respaldan esto de forma contundente:
-              </p>
-              <ul>
-                <li>🌸 <b><a
-                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12060749/"
-                        >Narvaez et al. (2013)</a></b> mostraron que los bebés que recibieron más contacto físico y respuestas sensibles a su llanto desarrollaron mayor seguridad y apego seguro a los 12 meses.</li>
-                <li>🌸 <b><a
-                        href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8624.1990.tb02888.x"
-                        >Anisfeld et al. (1990)</a></b> demostraron que el porteo y el contacto constante favorecen la <u>formación de vínculos afectivos estables.</u></li>
-                <li>🌸 <b><a
-                        href="https://www.tandfonline.com/doi/abs/10.1080/15295192.2012.683342"
-                        >Feldman (2012)</a></b> explica que la sincronía cuidador-bebé —a través del contacto, la mirada y la respuesta al llanto— regula el <u>sistema de estrés del bebé</u> y potencia su desarrollo emocional.</li>
-            </ul>
-    
-              <p>
-                En pocas palabras: atender al llanto, abrazar, coger, mecer… <b>no estropea al bebé, lo fortalece.</b>
-              </p>
-              
-              <h5>Mi experiencia clínica y cotidiana</h5>
-              <p>En consulta, he observado casos muy claros:
-              </p>
-              <ul>
-                <li>🌸 Bebés que lloraban mucho durante horas, y tras unos días de porteo sensible y atención al llanto, <b>empezaron a calmarse solos más rápido.</b></li>
-                <li>🌸 Padres que temían “malacostumbrar” a sus hijos y que, al cambiar la mirada y responder con calma, <b>descubrieron que el vínculo mejoraba y la ansiedad de ambos disminuía.</b></li>
-            </ul>
-            <p>
-                El contacto físico y emocional no genera dependencia negativa. Genera <b>confianza, seguridad y aprendizaje de regulación emocional.</b>
-              </p>
-            <h5>Por qué el mito sigue vivo</h5>
-            <p>
-                Vivimos rodeados de viejos mantras:</b>
-              </p>
-            <p>
-                <i>“No lo cojas, que se malacostumbra”</i>
-              </p>
-              <p>
-                <i>“Déjalo llorar un poco, que aprenda a calmarse”</i>
-              </p>
-              <p>
-                La evidencia actual demuestra que estos consejos no solo están desfasados, sino que pueden <b>aumentar el estrés del bebé y del cuidador,</b> y afectar la regulación emocional temprana.</p>
-                <p><b>El llanto no es manipulación,</b> es comunicación y necesidad de regulación.
-Responder de manera sensible es, literalmente, <i>una inversión en su desarrollo cerebral y emocional.</i>
-</p>
-            <p>No necesitas hacerlo perfecto. Pero sí puedes empezar por aquí:</p>
-              <ul>
-                <li>🌸 Baja tu ritmo</li>
-                <li>🌸 Observa antes de actuar</li>
-                <li>🌸 Sostén al bebé física y emocionalmente</li>
-                <li>🌸 Regula tu propio estado</li>
-            </ul>
-            <p>
-                Porque muchas veces, lo que más necesita tu bebé no es una solución rápida… <b>es un adulto que le ayude a regularse.</b>
-              </p>
-              <p>
-                Con pequeños gestos, como responder a su llanto o portearle cuando está alterado, estás enseñándole a <b>confiar y a autorregularse.</b>
-              </p>
-              <h5>Reflexión final</h5>
-              <p>
-                Cuando dejamos de medir cada gesto con miedo a “malacostumbrar”, empezamos a ver que <b>todo contacto que damos es aprendizaje y vínculo.</b>
-              </p>
-              <p>
-                Responder al llanto no debilita, fortalece.<br>
-                Abrazar no sobreprotege, enseña seguridad.<br>
-                Escuchar no cansa, construye confianza.<br>
-              </p>
-              <p>
-                <b>Donde se comprende para cuidar, donde se cuida para florecer.</b>
-              </p>`;
-  });
-});
-
+// Llanto
 [subbtn_llanto, subbtn_mbl_llanto].forEach((e) => {
   e.addEventListener("click", () => {
     document
@@ -355,6 +413,7 @@ Y eso —aunque ahora no lo parezca— ya estás empezando a hacerlo.
   });
 });
 
+// Plasticidad
 [subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
   e.addEventListener("click", () => {
     document
@@ -430,81 +489,7 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
   });
 });
 
-[subbtn_plasticidad, subbtn_mbl_plasticidad].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/Plasticidad.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 10 de Abril'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 70%");
-    postText.innerHTML = `<h4><u>Plasticidad cerebral en bebés:</u> por qué los primeros tres años son oro</h4>
-              <p>
-                Imagina que cada mirada, cada caricia, cada palabra que le das a tu bebé <b>se transforma en arquitectura cerebral.</b><br>
-Sí, lo que hoy parece pequeño o cotidiano, <b>está construyendo literalmente su futuro.</b><br>
-Los primeros tres años no son solo importantes… son <b>oro puro para su cerebro.</b>
-
-              </p>
-              
-              <h5>
-                ¿Qué es la plasticidad cerebral?
-              </h5>
-              <p>
-                La <i>plasticidad cerebral</i> es la <b>capacidad del cerebro de cambiar y reorganizarse</b> a lo largo de la vida, adaptando sus conexiones según lo que experimenta.<br>
-En los bebés, esta capacidad es <b>excepcionalmente alta:</b> sus neuronas forman <b>millones de nuevas conexiones cada segundo</b>, y cada interacción con el entorno —tu voz, un abrazo, un juego— <b>moldea la manera en que su cerebro aprende, siente y se relaciona.</b>
-
-              </p>
-              <p>
-                En otras palabras: la plasticidad cerebral es <b>la herramienta que convierte las experiencias cotidianas en estructuras reales dentro del cerebro.</b><br>
-Es por eso que los primeros años se consideran una ventana de oro del desarrollo, donde el impacto de cada experiencia es más profundo y duradero.
-
-              </p>
-              
-              <h5>Periodos sensibles: ventanas de oro del desarrollo</h5>
-              <p>
-                Los neurocientíficos llaman a estas etapas “periodos sensibles”: momentos en los que el cerebro es <b>más receptivo a la experiencia.</b><br>
-Lo que un bebé experimenta durante los primeros años <b>impacta de manera significativa</b> en su aprendizaje, regulación emocional y formación del vínculo afectivo.
-
-              </p>
-              
-              <p >📌 <b>Dato poderoso</b>: un estudio longitudinal en Bucarest mostró que bebés criados en instituciones sin vínculos afectivos fuertes tienen <b>patrones de actividad cerebral y desarrollo cognitivo retrasados</b> frente a bebés en familias o acogimiento.<br>
-Esto confirma que no solo los genes, sino la calidad de las experiencias tempranas, es crucial.
-</p>
-              
-              <h5>Raíces invisibles que sostienen su futuro</h5>
-              <p>
-                Cada gesto cotidiano construye la arquitectura de su cerebro:
-              </p>
-              <ul>
-                <li>🌸 <b>La mirada atenta</b> que le das mientras juega.</li>
-                <li>🌸 El <b>abrazo que calma</b> y regula su emoción.</li>
-                <li>🌸 Las <b>palabras que nombran emociones y objetos</b>, conectando lenguaje y pensamiento.</li>
-            </ul>
-              <p>Estas “raíces invisibles” serán la base sobre la que crecerá su aprendizaje, resiliencia y vínculo contigo.</p>
-
-              <h5>Lo que vosotros, papás, podéis hacer hoy</h5>
-              <ul>
-                <li>🌸 <b>Observa y responde</b>: cada interacción importa más de lo que imaginas.</li>
-                <li>🌸 <b>Juego libre y contacto físico</b>: no se trata de técnicas complicadas, sino de experiencias seguras y afectuosas.</li>
-                <li>🌸 <b>Presencia consciente</b>: tu calma, atención y consistencia son más poderosas que cualquier estímulo externo.</li>
-            </ul>
-              <p>
-                Recuerda: la <b>plasticidad cerebral permite cambios incluso más adelante</b>, pero estas primeras experiencias son <b>las que ponen las bases más sólidas.</b>
-              </p>
-              <p>
-                Tu mirada, tu juego y tu cariño de hoy son el oro que su cerebro necesita.
-              </p>
-              <p>Fuentes:<br>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/15509387/"><u>Knudsen, E. I. (2004)</u></a>. Sensitive periods in the development of the brain and behavior. Journal of Cognitive Neuroscience.<br>
-              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3722610/"><u>Tierney, A. L., & Nelson, C. A. (2009)</u></a>. Brain development and the role of experience in the early years. Zero to Three.<br>
-              <a href="https://developingchild.harvard.edu/"><u>Center on the Developing Child at Harvard University</u></a> – National Scientific Council on the Developing Child.
-              `;
-  });
-});
-
+// Tummy Time
 [subbtn_tTime, subbtn_mbl_tTime].forEach((e) => {
   e.addEventListener("click", () => {
     document
@@ -652,6 +637,7 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
   });
 });
 
+// Luz Roja
 [subbtn_redLight, subbtn_mbl_redLight].forEach((e) => {
   e.addEventListener("click", () => {
     document
@@ -807,6 +793,7 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
   });
 });
 
+// ChatGPT
 [subbtn_chatGPT, subbtn_mbl_chatGPT].forEach((e) => {
   e.addEventListener("click", () => {
     document
@@ -946,7 +933,9 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
   subbtn_mbl_tTime,
   subbtn_mbl_plasticidad,
   subbtn_mbl_llanto,
+  subbtn_mbl_cojas,
   subbtn_mbl_tapar,
+  subbtn_mbl_deformidades,
 ].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
@@ -963,7 +952,8 @@ const sentinel = document.querySelector(".bar-sentinel");
 const stickyNav = (entries) => {
   entries.forEach((entry) => {
     if (entry.boundingClientRect.top <= 0) {
-      console.log(entry);
+      console.log(entry.boundingClientRect.top);
+      console.log(entry.boundingClientRect.bottom);
       list.classList.add("sticky");
     } else {
       list.classList.remove("sticky");
