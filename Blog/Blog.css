@@ -235,8 +235,12 @@ h4 {
   width: 10px;
 }
 
+.hardHidden {
+  opacity: 0;
+}
+
 .hidden {
-  max-height: 0;
+  max-height: 0; 
   opacity: 0;
   overflow: hidden;
   transition: 0.5s ease;

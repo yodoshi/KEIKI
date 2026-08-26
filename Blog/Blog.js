@@ -90,7 +90,7 @@ En ocasiones, pueden predisponer a <b>deformidades posicionales posteriores</b>.
               <li>🌸 Estimulación motora y <b>tummy time</b> supervisado </li>
               <li>🌸 Estimular la rotación de la cabecita hacia ambos lados </li>
               <li>🌸 Uso del porteo para variar apoyos  </li>
-              <li>🌸 En algunos casos moderados o severos de deformidad posicional, <b>puede valorarse el uso de órtesis craneales</b> como parte del abordaje clínico. Sin embargo, la evidencia científica muestra que los resultados son <b>variables</b> en cuanto a eficacia y beneficio funcional, especialmente cuando las medidas posturales se implementan de forma temprana y consistente (Jung et al., 2020; Inchingolo et al., 2022; Children’s Hospital Boston, 2021). </li>
+              <li>🌸 En algunos casos moderados o severos de deformidad posicional, <b>puede valorarse el uso de órtesis craneales</b> como parte del abordaje clínico. Sin embargo, la evidencia científica muestra que los resultados son <b>variables</b> en cuanto a eficacia y beneficio funcional, especialmente cuando las medidas posturales se implementan de forma temprana y consistente. </li>
             </ul>
             <p>
             <b>Importante:</b> No hay evidencia robusta de que la plagiocefalia posicional cause retraso cognitivo o neurológico en lactantes sin otros factores asociados.
@@ -250,42 +250,89 @@ Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar 
     document
       .querySelector(".header")
       .style.setProperty("--img-position", "center 20%");
-    postText.innerHTML = `<h4>Tapar completamente al bebé en el carrito, ¿protección o riesgo?</h4>
-              <p>
-                En muchas ocasiones de <b>mi día a día</b> veo bebés completamente tapadxs en sus carritos. Algunxs por frío, otros para que no les dé el sol. Y me hace pensar… <b>¿a veces lo que creemos protección puede ser un riesgo sin darnos cuenta?</b>
-              </p>
-              <p>Como fisioterapeuta especializada en infancia, cada pequeño detalle cuenta. Pasear con tu bebé no es solo un momento de salida, también es <b>una oportunidad para cuidar su bienestar y su desarrollo desde lo más básico</b></p>
-              
-              <h5>
-                Los bebés no regulan bien la temperatura
+    postText.innerHTML = `<h4>No lo cojas mucho que se malacostumbra… ¿y si te dijera que es justo lo contrario?</h4>
+            <h5>
+                Una reflexión personal con evidencia
               </h5>
               <p>
-                Los primeros meses, lxs bebés <b>no controlan completamente su temperatura corporal.</b> Su sistema de termorregulación todavía está en desarrollo, y cubrirlxs demasiado puede <b>sobrecalentarlos muy rápido</b>, incluso aunque el día parezca templado.
-Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar su respiración y aumentar el riesgo de golpe de calor</b>. No se trata de alarmarte, sino de ayudarte a <b>prevenir situaciones que podemos evitar con pequeños gestos.</b>
+                Cuando alguien me dice <i>“no lo cojas tanto, se va a malacostumbrar”</i>, siento un escalofrío.<br>
               </p>
-              <h5>
-                Los riesgos de taparlxs sin ventilación
-              </h5>
-              <ul>
-                <li>🌸 <b>Acumulación de CO₂:</b> respirar su propio aire exhalado puede afectar su oxigenación. </li>
-                <li>🌸 <b>Golpe de calor:</b> incluso sin sol directo, cubrirlxs demasiado aumenta la temperatura corporal de manera peligrosa. 
-                <li>🌸 <b>Dificultad respiratoria:</b> tapar cara o cabeza impide que respiren con normalidad. 
-            </ul>
+              <p>Desde mi experiencia clínica y desde la neurociencia del desarrollo, <b>coger a un bebé, atender su llanto y responder a sus necesidades, no malacostumbra. Lo nutre.</b></p>
+              <p>El contacto físico y la respuesta sensible son la base sobre la que tu bebé construye su cerebro, su sistema de regulación emocional y la seguridad en el vínculo. No es teoría: es evidencia.</p>
+              <p>He visto padres primerizos llenos de dudas, con miedo de “consentir demasiado”. Y la realidad es clara: <b>los bebés que reciben atención y contacto sensibles crecen más seguros y confiados,</b> tanto en consulta como en la vida diaria.</p>
               
-              <h5>Cómo pasear de forma cómoda y segura</h5>
-              <p>Con pequeños cambios, puedes transformar el paseo en un momento seguro y agradable:</p>
+              <h5>
+                Lo que dice la ciencia
+              </h5>
+              <p>
+                Los estudios respaldan esto de forma contundente:
+              </p>
               <ul>
-                <li>🌸 <b>Ropa ligera y transpirable:</b> evita capas innecesarias o tejidos gruesos. </li>
-                <li>🌸 <b>Capotas ventiladas o con protección solar:</b> protegen del sol sin impedir la circulación de aire.</li>
-                <li>🌸 <b>Revisar nuca y espalda:</b> la temperatura de la nuca te dice mucho más que manos o pies; si está caliente o sudorosa, ventila un momento.</li>
-                <li>🌸 <b>Plástico protector en días de lluvia:</b> sí, pero dejando siempre espacios abiertos para que respire, y nunca colocar mantas encima dentro del plástico.</li>
+                <li>🌸 <b><a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12060749/"
+                        >Narvaez et al. (2013)</a></b> mostraron que los bebés que recibieron más contacto físico y respuestas sensibles a su llanto desarrollaron mayor seguridad y apego seguro a los 12 meses.</li>
+                <li>🌸 <b><a
+                        href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8624.1990.tb02888.x"
+                        >Anisfeld et al. (1990)</a></b> demostraron que el porteo y el contacto constante favorecen la <u>formación de vínculos afectivos estables.</u></li>
+                <li>🌸 <b><a
+                        href="https://www.tandfonline.com/doi/abs/10.1080/15295192.2012.683342"
+                        >Feldman (2012)</a></b> explica que la sincronía cuidador-bebé —a través del contacto, la mirada y la respuesta al llanto— regula el <u>sistema de estrés del bebé</u> y potencia su desarrollo emocional.</li>
             </ul>
-            
-            <h5>Reflexión Keiki</h5>
+    
+              <p>
+                En pocas palabras: atender al llanto, abrazar, coger, mecer… <b>no estropea al bebé, lo fortalece.</b>
+              </p>
+              
+              <h5>Mi experiencia clínica y cotidiana</h5>
+              <p>En consulta, he observado casos muy claros:
+              </p>
+              <ul>
+                <li>🌸 Bebés que lloraban mucho durante horas, y tras unos días de porteo sensible y atención al llanto, <b>empezaron a calmarse solos más rápido.</b></li>
+                <li>🌸 Padres que temían “malacostumbrar” a sus hijos y que, al cambiar la mirada y responder con calma, <b>descubrieron que el vínculo mejoraba y la ansiedad de ambos disminuía.</b></li>
+            </ul>
             <p>
-                Cada paseo es mucho más que salir a la calle. Es una <b>oportunidad para cuidar su bienestar desde lo más básico,</b> para que se sienta segurox cómodx y confiadx en su entorno. A veces, <b>menos es más:</b> no necesitamos taparlxs totalmente para protegerlxs, sino <b>estar atentxs a sus señales y ajustar nuestro cuidado con sentido.</b>
+                El contacto físico y emocional no genera dependencia negativa. Genera <b>confianza, seguridad y aprendizaje de regulación emocional.</b>
               </p>
-            `;
+            <h5>Por qué el mito sigue vivo</h5>
+            <p>
+                Vivimos rodeados de viejos mantras:</b>
+              </p>
+            <p>
+                <i>“No lo cojas, que se malacostumbra”</i>
+              </p>
+              <p>
+                <i>“Déjalo llorar un poco, que aprenda a calmarse”</i>
+              </p>
+              <p>
+                La evidencia actual demuestra que estos consejos no solo están desfasados, sino que pueden <b>aumentar el estrés del bebé y del cuidador,</b> y afectar la regulación emocional temprana.</p>
+                <p><b>El llanto no es manipulación,</b> es comunicación y necesidad de regulación.
+Responder de manera sensible es, literalmente, <i>una inversión en su desarrollo cerebral y emocional.</i>
+</p>
+            <p>No necesitas hacerlo perfecto. Pero sí puedes empezar por aquí:</p>
+              <ul>
+                <li>🌸 Baja tu ritmo</li>
+                <li>🌸 Observa antes de actuar</li>
+                <li>🌸 Sostén al bebé física y emocionalmente</li>
+                <li>🌸 Regula tu propio estado</li>
+            </ul>
+            <p>
+                Porque muchas veces, lo que más necesita tu bebé no es una solución rápida… <b>es un adulto que le ayude a regularse.</b>
+              </p>
+              <p>
+                Con pequeños gestos, como responder a su llanto o portearle cuando está alterado, estás enseñándole a <b>confiar y a autorregularse.</b>
+              </p>
+              <h5>Reflexión final</h5>
+              <p>
+                Cuando dejamos de medir cada gesto con miedo a “malacostumbrar”, empezamos a ver que <b>todo contacto que damos es aprendizaje y vínculo.</b>
+              </p>
+              <p>
+                Responder al llanto no debilita, fortalece.<br>
+                Abrazar no sobreprotege, enseña seguridad.<br>
+                Escuchar no cansa, construye confianza.<br>
+              </p>
+              <p>
+                <b>Donde se comprende para cuidar, donde se cuida para florecer.</b>
+              </p>`;
   });
 });
 
@@ -953,12 +1000,17 @@ const sentinel = document.querySelector(".bar-sentinel");
 const stickyNav = (entries) => {
   entries.forEach((entry) => {
     if (entry.boundingClientRect.top <= 0) {
-      console.log(entry.boundingClientRect.top);
-      console.log(entry.boundingClientRect.bottom);
       list.classList.add("sticky");
     } else {
       list.classList.remove("sticky");
     }
+    window.addEventListener("load", () => {
+      if (entry.boundingClientRect.top <= 0) {
+        list.classList.add("sticky");
+      } else {
+        list.classList.remove("sticky");
+      }
+    });
   });
 };
 
@@ -968,3 +1020,10 @@ const observer = new IntersectionObserver(stickyNav, {
 });
 
 observer.observe(bar);
+
+window.addEventListener("scroll", () => {
+  const listRect = list.getBoundingClientRect();
+  const footerRect = footer.getBoundingClientRect();
+
+  list.classList.toggle("hardHidden", listRect.bottom >= footerRect.top);
+});
