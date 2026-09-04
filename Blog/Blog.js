@@ -12,6 +12,7 @@ const subbtn_llanto = document.getElementById("llanto");
 const subbtn_cojas = document.getElementById("cojas");
 const subbtn_tapar = document.getElementById("tapar");
 const subbtn_deformidades = document.getElementById("deformidades");
+const subbtn_porteo = document.getElementById("porteo");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
@@ -20,6 +21,7 @@ const subbtn_mbl_llanto = document.getElementById("mbl-llanto");
 const subbtn_mbl_cojas = document.getElementById("mbl-cojas");
 const subbtn_mbl_tapar = document.getElementById("mbl-tapar");
 const subbtn_mbl_deformidades = document.getElementById("mbl-deformidades");
+const subbtn_mbl_porteo = document.getElementById("mbl-porteo");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -27,85 +29,58 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>Deformidades craneales en bebés: qué son, cuándo preocuparse y cómo actuar</h4>
-              <p>¿Sabías que no todas las cabecitas planas o asimétricas significan lo mismo? Algunas se moldean solas con el tiempo, otras necesitan acompañamiento especializado… incluso hay deformidades que se originan antes de nacer.
-              </p>
-              <p>En esta entrada, te cuento cómo distinguirlas y qué nos dice la evidencia científica sobre cómo actuar, para que observes sin alarmarte y cuides el desarrollo de tu peque de forma segura.</p>
-              
-              <h5>
-                Cómo se forma el cráneo del bebé
-              </h5>
-              <p>
-                El cráneo del bebé está formado por <b>huesos separados por suturas flexibles</b>, que permiten adaptarse al parto y al crecimiento cerebral.
-Estas suturas pueden cerrarse prematuramente (<b>craneosinostosis</b>) o verse afectadas por <b>factores intrauterinos</b> (como la posición mantenida en el útero) o <b>posturales tras el nacimiento</b> (como ocurre en la plagiocefalia posicional).
-Identificar de dónde viene la asimetría es clave para saber cuándo <b>solo acompañar con posicionamiento</b> y cuándo <b>derivar para valoración médica.</b>
+const latestPost = `<h4>Porteo ergonómico: una inversión en el desarrollo de tu bebé</h4>
+              <p>Portear a tu bebé puede parecer un gesto sencillo, pero en realidad cada porteo tiene un impacto profundo en su desarrollo.<br>
+              No solo calma: moldea su cerebro, fortalece su vínculo contigo y cuida su salud física y emocional.</p>
 
+              <p>Cuando acercamos a nuestro bebé al cuerpo, no solo estamos ofreciendo confort. Estudios como el de <a href="https://pubmed.ncbi.nlm.nih.gov/3517799/"><u>Hunziker y Barr (1986)</u></a> muestran que los bebés que son porteados lloran un 43% menos que los que no lo son. Ese contacto constante ayuda a regular su sistema nervioso, reduce la irritabilidad y puede incluso prevenir o disminuir el cólico del lactante.</p>
+
+              <p>Cada momento de contacto se convierte en una lección de autorregulación, aprendida desde su propio cuerpo.</p>
+              <h5><u>
+                BENEFICIOS DEL PORTEO
+              </u></h5>
+              <h5>→ Regulación emocional y menos llanto</h5>
+              <p>
+                El porteo constante permite que los bebés aprendan a autorregularse, lo que se traduce en menos llanto y mayor bienestar general. Este efecto se observa tanto en recién nacidos como en los primeros meses de vida y sienta las bases para un desarrollo emocional más estable.
               </p>
               <h5>
-                Craneosinostosis: deformidades sinostóticas
+                → Lactancia y vínculo reforzado
               </h5>
-              <ul>
-                <li>🌸 Es poco frecuente: <b>1 de cada 2.000-2.500 nacimientos</b> (Kabbani, AAFP 2004).</li>
-                <li>🌸 Se debe a la <b>fusión prematura de una o varias suturas craneales</b>, lo que impide el crecimiento normal del cráneo.</li>
-                <li>🌸 Requiere <b>valoración médica y quirúrgica</b> por neurocirugía o cirugía plástica pediátrica. </li>
-                <li>🌸 Suele presentar <b>asimetrías marcadas</b>, desplazamiento de orejas y órbitas oculares, y <b>no mejora con cambios posturales</b>. </li>
-            </ul>
+              <p>Portear también fortalece la lactancia. Un estudio en Italia (Pisacane et al., 2012) demostró que los bebés porteados durante el primer mes fueron amamantados durante más tiempo que aquellos que no lo eran. Más allá de la alimentación, este contacto continuo <b>refuerza la seguridad emocional del bebé y estrecha el vínculo con su cuidador</b>, generando confianza y cercanía desde los primeros días.</p>
               
-              <h5>Deformidades por compresión intrauterina</h5>
-              <p>Algunas asimetrías pueden originarse <b>antes de nacer</b>, por falta de espacio o posición mantenida del feto:</p>
-              <ul>
-                <li>🌸 Embarazo múltiple,</li>
-                <li>🌸 Pelvis estrecha,</li>
-                <li>🌸 Parto prolongado o instrumentado,</li>
-                <li>🌸 Primogénito,</li>
-                <li>🌸 Prematuridad...</li>
-              </ul>
-              <p>
-              Estas presiones <b>pueden dejar leves asimetrías que mejoran con el tiempo</b> y la movilidad.
-En ocasiones, pueden predisponer a <b>deformidades posicionales posteriores</b>.
+              <h5>→ Apego seguro y oxitocina</h5>
+              <p>El contacto físico cercano <b>activa la oxitocina</b>, la hormona del apego. Existen estudios que muestran que los bebés que reciben más contacto físico desarrollan <b>apego seguro</b> y se sienten más tranquilos <a href="https://www.researchgate.net/publication/20909823_Does_infant_carrying_promote_attachment_An_experimental_study_of_the_effects_of_increased_physical_contact_on_the_development_of_attachment">(<u>Anisfeld et al., 1990; Feldman et al., 2012</u>)</a>. Incluso el piel con piel justo después del nacimiento modula el sistema motor, mejora la organización del sueño y potencia la regulación emocional <a href="https://pubmed.ncbi.nlm.nih.gov/15060238/">(<u>Ferber & Makhoul, 2004</u>)</a>.
               </p>
             
-            <h5>Deformidades posicionales postnatales: las más frecuentes</h5>
+            <h5>→ Beneficios fisiológicos y prevención de problemas comunes</h5>
             <p>
-            Representan <b>más del 80–90% de las asimetrías craneales en lactantes</b> y suelen aparecer durante los <b>primeros meses de vida</b>, cuando la cabeza pasa mucho tiempo apoyada en la misma posición.
+            La <b>posición ergonómica</b> —caderas abiertas, rodillas más altas que el culito (posición en M) y espalda en forma de C— protege la salud de la cadera y distribuye mejor el peso del bebé. Además, estudios recientes <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12428022/">(<u>Siddicky et al., 2020</u>)</a> sugieren que el porteo puede:
             </p>
-            <p>
-            En 1992, la Academia Americana de Pediatría recomendó <b>dormir boca arriba</b> para reducir la muerte súbita, lo que <b>disminuyó la mortalidad en un 40%</b>, pero provocó un aumento significativo de plagiocefalia posicional, alcanzando una <b>prevalencia mundial del 46,6%</b>.
-            </p>
-            <p>
-            Estas deformidades se asocian con:
-            </p>
+            
             <ul>
-              <li>🌸 Preferencia postural o tortícolis congénita </li>
-              <li>🌸 Reflujo o hipotonía (el bebé evita estar boca abajo</li>
-              <li>🌸 Falta de tiempo en <b>tummy time</b> </li>
-              <li>🌸 Prematuridad (cráneo más maleable) </li>
+              <li>🌸 Mejorar la <b>regulación cardiorrespiratoria</b> y la termorregulación </li>
+              <li>🌸 Reducir episodios de <b>agitación y apnea</b></li>
+              <li>🌸 Actuar como <b>estrategia preventiva frente a infecciones de oído (otitis)</b> </li>
+              <li>🌸 Ayudar a aliviar síntomas de <b>reflujo gastroesofágico</b>, especialmente en los primeros meses de vida  </li>
             </ul>
-            <h5>Cómo prevenir y tratar las deformidades posicionales</h5>
-            <p>
-            El <b>mejor tratamiento</b> es la prevención y la intervención temprana:
+            <p>Estos beneficios no solo se observan en bebés prematuros con método canguro, sino también en bebés sanos porteados de forma ergonómica, demostrando que el contacto cercano tiene efectos mucho más amplios de lo que a simple vista parece.</p>
+            
+            <h5>Reflexión Keiki</h5>
+            <p>Portear no es solo un gesto de cariño; es acompañar el desarrollo de tu bebé desde el cuerpo y la emoción. Cada vez que lo acercas a ti, no solo lo calmas: estás moldeando su cerebro, reforzando su apego seguro y apoyando su bienestar físico, incluso previniendo problemas como el reflujo o las otitis.
             </p>
-            <ul>
-              <li>🌸 Cambios posturales frecuentes durante el día  </li>
-              <li>🌸 Estimulación motora y <b>tummy time</b> supervisado </li>
-              <li>🌸 Estimular la rotación de la cabecita hacia ambos lados </li>
-              <li>🌸 Uso del porteo para variar apoyos  </li>
-              <li>🌸 En algunos casos moderados o severos de deformidad posicional, <b>puede valorarse el uso de órtesis craneales</b> como parte del abordaje clínico. Sin embargo, la evidencia científica muestra que los resultados son <b>variables</b> en cuanto a eficacia y beneficio funcional, especialmente cuando las medidas posturales se implementan de forma temprana y consistente. </li>
-            </ul>
-            <p>
-            <b>Importante:</b> No hay evidencia robusta de que la plagiocefalia posicional cause retraso cognitivo o neurológico en lactantes sin otros factores asociados.
-            </p>
-            <h5>Recuerda, observar no es alarmarse</h5>
-            <p>
-            El c<b>ráneo del bebé se adapta</b>, pero también nos habla.
-Con <b>pequeños cambios en la postura y supervisión diaria</b>, podemos acompañar su desarrollo de forma segura, evitando preocupaciones innecesarias.
-            </p>
+            <p>Desde mi experiencia como fisioterapeuta pediátrica, veo cómo estos momentos de contacto constante generan seguridad, calma y confianza, tanto en el bebé como en sus cuidadores.</p>
+            <p>El porteo es una invitación a estar presentes de forma activa, a sostener con intención y a acompañar su crecimiento de manera consciente.<br>
+En Keiki creemos que <b>cuidar desde el cuerpo es cuidar desde la ciencia y el corazón</b>. 
+</p>
+
             <p>
             Fuentes:<br>
-            <a href="https://www.dmtjournal.org/dergi/pozisyonel-plagiosefali-tanim-tani-ve-tedavi20251220092616.pdf">•	Jung, et al. (2020). Positional plagiocephaly: insights into prevalence, diagnosis, and non surgical therapy. </a><br>
-            <a href="https://revistasanitariadeinvestigacion.com/plagiocefalia-posicional-tratamiento-fisioterapeutico-articulo-monografico/">•	Macipe Gascón B, Gil Serrano C, Orós Ribes EP, et al. Plagiocefalia posicional: tratamiento fisioterapéutico. Revista Sanitaria de Investigación. 2022;3(8).
-</a><br>
-            <a href="https://revistasanitariadeinvestigacion.com/prevencion-primaria-de-la-plagiocefalia-posicional-en-lactantes/">•	Prevención primaria de la plagiocefalia posicional en lactantes. Revista Sanitaria de Investigación. </a>
+            <a href="https://www.researchgate.net/publication/20909823_Does_infant_carrying_promote_attachment_An_experimental_study_of_the_effects_of_increased_physical_contact_on_the_development_of_attachment"><u>•	Anisfeld, E. et al. (1990</u>)</a>. <i>Does Infant Carrying Promote Attachment?</i> Child Development.<br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/3517799/"><u>•	Hunziker, U. A., & Barr, R. G. (1986</u>)</a>. <i>Increased carrying reduces infant crying: a randomized controlled trial</i>. Pediatrics.<br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/22734604/"><u>•	Pisacane, A. et al. (2012</u>)</a>. <i>Infant carrying and breastfeeding duration: a prospective cohort study</i>.  <br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/15060238/"><u>•	Ferber, S. G., & Makhoul, I. R. (2004</u>)</a>. <i>The effect of skin-to-skin contact on newborn regulation</i>. Pediatrics.  <br>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/22285934/"><u>•	Feldman, R. et al. (2012</u>)</a>. <i>Oxytocin and social affiliation in humans. Biological Psychiatry</i>.  <br>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12428022/"><u>•⁠  ⁠Siddicky, S. F. et al. (2020</u>)</a>. <i>Benefits of ergonomic babywearing</i>. PMC Open Access.  
             </p>
 
             `;
@@ -152,25 +127,41 @@ sideBarObserver.observe(postText);
 
 /*  ENVIAR EL POST */
 
-// Al cargar la Página
+// AL CARGAR LA PÁGINA
 document.addEventListener("DOMContentLoaded", () => {
   postText.insertAdjacentHTML("afterbegin", latestPost);
   document
     .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 31 de Julio'");
+    .style.setProperty("--before-content", "'Publicado el 4 de Septiembre'");
   document
     .querySelector(".header")
-    .style.setProperty("--img-position", "center 75%");
+    .style.setProperty("--img-position", "center 50%");
   document
     .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/deformidadesImg.png)");
+    .style.setProperty("--image", "url(../public/images/porteo_blog.png)");
 });
 
-// Al seleccionar un Post determinado
+// AL SELECCIONAR UN POST
+
+// Porteo
+[subbtn_porteo, subbtn_mbl_porteo].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/porteo_blog.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 4 de Septiembre'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 50%");
+    postText.innerHTML = latestPost;
+  });
+});
 
 // Deformidades Craneales
 [subbtn_deformidades, subbtn_mbl_deformidades].forEach((e) => {
-  e.addEventListener("click", () => {
+  e.addEventListener("click", (e) => {
     document
       .querySelector(".header")
       .style.setProperty(
@@ -183,7 +174,105 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelector(".header")
       .style.setProperty("--img-position", "center 75%");
-    postText.innerHTML = latestPost;
+    postText.innerHTML = `<h4>Deformidades craneales en bebés: qué son, cuándo preocuparse y cómo actuar</h4>
+              <p>¿Sabías que no todas las cabecitas planas o asimétricas significan lo mismo? Algunas se moldean solas con el tiempo, otras necesitan acompañamiento especializado… incluso hay deformidades que se originan antes de nacer.
+              </p>
+              <p>Como fisioterapeuta especializada en infancia, cada pequeño detalle cuenta. Pasear con tu bebé no es solo un momento de salida, también es <b>una oportunidad para cuidar su bienestar y su desarrollo desde lo más básico</b></p>
+              <p>En esta entrada, te cuento cómo distinguirlas y qué nos dice la evidencia científica sobre cómo actuar, para que observes sin alarmarte y cuides el desarrollo de tu peque de forma segura.</p>
+              
+              <h5>
+                Los bebés no regulan bien la temperatura
+                Cómo se forma el cráneo del bebé
+              </h5>
+              <p>
+                Los primeros meses, lxs bebés <b>no controlan completamente su temperatura corporal.</b> Su sistema de termorregulación todavía está en desarrollo, y cubrirlxs demasiado puede <b>sobrecalentarlos muy rápido</b>, incluso aunque el día parezca templado.
+Cubrirlxs sin ventilación con mantas, sábanas o muselinas <b>puede dificultar su respiración y aumentar el riesgo de golpe de calor</b>. No se trata de alarmarte, sino de ayudarte a <b>prevenir situaciones que podemos evitar con pequeños gestos.</b>
+                El cráneo del bebé está formado por <b>huesos separados por suturas flexibles</b>, que permiten adaptarse al parto y al crecimiento cerebral.
+Estas suturas pueden cerrarse prematuramente (<b>craneosinostosis</b>) o verse afectadas por <b>factores intrauterinos</b> (como la posición mantenida en el útero) o <b>posturales tras el nacimiento</b> (como ocurre en la plagiocefalia posicional).
+Identificar de dónde viene la asimetría es clave para saber cuándo <b>solo acompañar con posicionamiento</b> y cuándo <b>derivar para valoración médica.</b>
+
+              </p>
+              <h5>
+                Los riesgos de taparlxs sin ventilación
+                Craneosinostosis: deformidades sinostóticas
+              </h5>
+              <ul>
+                <li>🌸 <b>Acumulación de CO₂:</b> respirar su propio aire exhalado puede afectar su oxigenación. </li>
+                <li>🌸 <b>Golpe de calor:</b> incluso sin sol directo, cubrirlxs demasiado aumenta la temperatura corporal de manera peligrosa. 
+                <li>🌸 <b>Dificultad respiratoria:</b> tapar cara o cabeza impide que respiren con normalidad. 
+                <li>🌸 Es poco frecuente: <b>1 de cada 2.000-2.500 nacimientos</b> (Kabbani, AAFP 2004).</li>
+                <li>🌸 Se debe a la <b>fusión prematura de una o varias suturas craneales</b>, lo que impide el crecimiento normal del cráneo.</li>
+                <li>🌸 Requiere <b>valoración médica y quirúrgica</b> por neurocirugía o cirugía plástica pediátrica. </li>
+                <li>🌸 Suele presentar <b>asimetrías marcadas</b>, desplazamiento de orejas y órbitas oculares, y <b>no mejora con cambios posturales</b>. </li>
+            </ul>
+              
+              <h5>Cómo pasear de forma cómoda y segura</h5>
+              <p>Con pequeños cambios, puedes transformar el paseo en un momento seguro y agradable:</p>
+              <h5>Deformidades por compresión intrauterina</h5>
+              <p>Algunas asimetrías pueden originarse <b>antes de nacer</b>, por falta de espacio o posición mantenida del feto:</p>
+              <ul>
+                <li>🌸 <b>Ropa ligera y transpirable:</b> evita capas innecesarias o tejidos gruesos. </li>
+                <li>🌸 <b>Capotas ventiladas o con protección solar:</b> protegen del sol sin impedir la circulación de aire.</li>
+                <li>🌸 <b>Revisar nuca y espalda:</b> la temperatura de la nuca te dice mucho más que manos o pies; si está caliente o sudorosa, ventila un momento.</li>
+                <li>🌸 <b>Plástico protector en días de lluvia:</b> sí, pero dejando siempre espacios abiertos para que respire, y nunca colocar mantas encima dentro del plástico.</li>
+            </ul>
+                <li>🌸 Embarazo múltiple,</li>
+                <li>🌸 Pelvis estrecha,</li>
+                <li>🌸 Parto prolongado o instrumentado,</li>
+                <li>🌸 Primogénito,</li>
+                <li>🌸 Prematuridad...</li>
+              </ul>
+              <p>
+              Estas presiones <b>pueden dejar leves asimetrías que mejoran con el tiempo</b> y la movilidad.
+En ocasiones, pueden predisponer a <b>deformidades posicionales posteriores</b>.
+              </p>
+            
+            <h5>Reflexión Keiki</h5>
+            <h5>Deformidades posicionales postnatales: las más frecuentes</h5>
+            <p>
+                Cada paseo es mucho más que salir a la calle. Es una <b>oportunidad para cuidar su bienestar desde lo más básico,</b> para que se sienta segurox cómodx y confiadx en su entorno. A veces, <b>menos es más:</b> no necesitamos taparlxs totalmente para protegerlxs, sino <b>estar atentxs a sus señales y ajustar nuestro cuidado con sentido.</b>
+              </p>
+            Representan <b>más del 80–90% de las asimetrías craneales en lactantes</b> y suelen aparecer durante los <b>primeros meses de vida</b>, cuando la cabeza pasa mucho tiempo apoyada en la misma posición.
+            </p>
+            <p>
+            En 1992, la Academia Americana de Pediatría recomendó <b>dormir boca arriba</b> para reducir la muerte súbita, lo que <b>disminuyó la mortalidad en un 40%</b>, pero provocó un aumento significativo de plagiocefalia posicional, alcanzando una <b>prevalencia mundial del 46,6%</b>.
+            </p>
+            <p>
+            Estas deformidades se asocian con:
+            </p>
+            <ul>
+              <li>🌸 Preferencia postural o tortícolis congénita </li>
+              <li>🌸 Reflujo o hipotonía (el bebé evita estar boca abajo</li>
+              <li>🌸 Falta de tiempo en <b>tummy time</b> </li>
+              <li>🌸 Prematuridad (cráneo más maleable) </li>
+            </ul>
+            <h5>Cómo prevenir y tratar las deformidades posicionales</h5>
+            <p>
+            El <b>mejor tratamiento</b> es la prevención y la intervención temprana:
+            </p>
+            <ul>
+              <li>🌸 Cambios posturales frecuentes durante el día  </li>
+              <li>🌸 Estimulación motora y <b>tummy time</b> supervisado </li>
+              <li>🌸 Estimular la rotación de la cabecita hacia ambos lados </li>
+              <li>🌸 Uso del porteo para variar apoyos  </li>
+              <li>🌸 En algunos casos moderados o severos de deformidad posicional, <b>puede valorarse el uso de órtesis craneales</b> como parte del abordaje clínico. Sin embargo, la evidencia científica muestra que los resultados son <b>variables</b> en cuanto a eficacia y beneficio funcional, especialmente cuando las medidas posturales se implementan de forma temprana y consistente (Jung et al., 2020; Inchingolo et al., 2022; Children’s Hospital Boston, 2021). </li>
+            </ul>
+            <p>
+            <b>Importante:</b> No hay evidencia robusta de que la plagiocefalia posicional cause retraso cognitivo o neurológico en lactantes sin otros factores asociados.
+            </p>
+            <h5>Recuerda, observar no es alarmarse</h5>
+            <p>
+            El <b>cráneo del bebé se adapta</b>, pero también nos habla.
+Con <b>pequeños cambios en la postura y supervisión diaria</b>, podemos acompañar su desarrollo de forma segura, evitando preocupaciones innecesarias.
+            </p>
+            <p>
+            Fuentes:<br>
+            <a href="">•	Jung, et al. (2020). Positional plagiocephaly: insights into prevalence, diagnosis, and non surgical therapy. </a><br>
+            <a href="">•	Inchingolo, et al. (2022). Non surgical management and outcomes of positional plagiocephaly.  </a><br>
+            <a href="">•	Children’s Hospital Boston (2021). Clinical considerations for deformational plagiocephaly and helmet therapy.  </a>
+            </p>
+
+            `;
   });
 });
 
