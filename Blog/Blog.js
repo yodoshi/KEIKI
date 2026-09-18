@@ -13,6 +13,7 @@ const subbtn_cojas = document.getElementById("cojas");
 const subbtn_tapar = document.getElementById("tapar");
 const subbtn_deformidades = document.getElementById("deformidades");
 const subbtn_porteo = document.getElementById("porteo");
+const subbtn_vacunas = document.getElementById("vacunas");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
@@ -22,6 +23,7 @@ const subbtn_mbl_cojas = document.getElementById("mbl-cojas");
 const subbtn_mbl_tapar = document.getElementById("mbl-tapar");
 const subbtn_mbl_deformidades = document.getElementById("mbl-deformidades");
 const subbtn_mbl_porteo = document.getElementById("mbl-porteo");
+const subbtn_mbl_vacunas = document.getElementById("mbl-vacunas");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -29,7 +31,146 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>Porteo ergonómico: una inversión en el desarrollo de tu bebé</h4>
+const latestPost = `<h4>VACUNAS A LO LARGO DE LA VIDA: pequeños cuidados que protegen grandes historias</h4>
+
+              <p>Hoy quiero hablarte de algo que a veces puede parecer complicado: el calendario de vacunas. </p>
+
+              <p>Entre revisiones, citas y la rutina diaria, es fácil perderse o no recordar exactamente cuándo toca cada dosis. Pero, como siempre digo, la prevención es la base de una vida saludable, y un pequeño cuidado hoy puede proteger grandes historias mañana.</p>
+              <h5>
+                Mi punto de vista
+              </h5>
+              
+              <p>
+                Como fisioterapeuta especializada en infancia y pediatría, veo a diario cómo los pequeños hábitos preventivos marcan la diferencia. Las vacunas son uno de esos pilares: no solo protegen contra enfermedades, sino que permiten que los niños y niñas crezcan explorando, jugando y desarrollándose con seguridad.
+              </p>
+              
+              <p>Me gusta pensar que vacunarse no es solo un “chequeo médico más”, sino un acto de cuidado consciente: cuidamos a nuestros peques, cuidamos a la comunidad y nos cuidamos a nosotros mismos.</p>
+              
+              <h5>Pequeños cuidados que suman</h5>
+            
+            <ul>
+              <li>🌸 <b>Mantén el calendario a mano:</b> consultarlo antes de cada revisión médica facilita planificar las visitas y evita olvidos.  </li>
+              <li>🌸 <b>Conoce las vacunas recomendadas según la edad:</b> desde recién nacidos hasta adultos, cada dosis tiene su razón científica. Puedes consultar el calendario oficial <a href="https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf"><u>aquí.</u><a> </li>
+              <li>🌸 <b>Sigue las indicaciones de tu pediatra o profesional de confianza:</b> cada familia tiene sus matices, y el calendario oficial nos da la guía general. </li>
+            </ul>
+            
+            <h5>Reflexión Keiki</h5>
+            <p>Cada vacuna, cada cita y cada dosis son pasos hacia historias más saludables. 
+            </p>
+            <p>Por eso, guardar tu calendario y consultarlo cuando lo necesites no es solo organizar, es proteger el futuro de tus hijos.</p>
+            <p>Y no se trata solo de proteger a tu peque: cada vacuna ayuda a cuidar también a otros niños y niñas, especialmente a los más vulnerables. Enfermedades que hoy damos por casi erradicadas gracias a la vacunación pueden reaparecer si se interrumpe la protección colectiva. </b>.</p>
+            <p>Por eso, la prevención siempre suma: cuidar a tu hijo es cuidar a toda la comunidad.
+            </p>
+            <p>`;
+
+/* SIDE BAR */
+
+// Mostrar Menú Lateral
+sideBarBtn.addEventListener("click", () => {
+  sideBarBtn.classList.toggle("adjust-btn");
+  sideBar.classList.toggle("slide");
+  plusSign.classList.toggle("hidden");
+  minusSign.classList.toggle("hidden");
+});
+
+// Ocultar Menú Lateral
+document.addEventListener("click", (e) => {
+  if (sideBar.classList.contains("slide")) {
+    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
+      console.log(sideBar.classList);
+      sideBarBtn.classList.toggle("adjust-btn");
+      sideBar.classList.toggle("slide");
+      plusSign.classList.toggle("hidden");
+      minusSign.classList.toggle("hidden");
+    }
+  }
+});
+
+// Ocultar barra lateral al clickar botón
+[
+  subbtn_mbl_chatGPT,
+  subbtn_mbl_redLight,
+  subbtn_mbl_tTime,
+  subbtn_mbl_plasticidad,
+  subbtn_mbl_llanto,
+  subbtn_mbl_cojas,
+  subbtn_mbl_tapar,
+  subbtn_mbl_deformidades,
+  subbtn_mbl_porteo,
+  subbtn_mbl_vacunas,
+].forEach((e) => {
+  e.addEventListener("click", () => {
+    sideBar.classList.remove("slide");
+    minusSign.classList.toggle("hidden");
+    plusSign.classList.toggle("hidden");
+    sideBarBtn.classList.toggle("adjust-btn");
+  });
+});
+
+const showSideBar = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sideBar.classList.add("show-bar");
+    } else {
+      sideBar.classList.remove("show-bar");
+    }
+  });
+};
+
+const sideBarObserver = new IntersectionObserver(showSideBar, {
+  root: null,
+  threshold: 0.05,
+});
+
+sideBarObserver.observe(postText);
+
+/*  ENVIAR EL POST */
+
+// AL CARGAR LA PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+  postText.insertAdjacentHTML("afterbegin", latestPost);
+  document
+    .querySelector(".header")
+    .style.setProperty("--before-content", "'Publicado el 18 de Septiembre'");
+  document
+    .querySelector(".header")
+    .style.setProperty("--img-position", "center 80%");
+  document
+    .querySelector(".header")
+    .style.setProperty("--image", "url(../public/images/VACUNAS.png)");
+});
+
+// AL SELECCIONAR UN POST
+
+// Vacunas
+[subbtn_vacunas, subbtn_mbl_vacunas].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/VACUNAS.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 18 de Septiembre'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 80%");
+    postText.innerHTML = latestPost;
+  });
+});
+
+// Porteo
+[subbtn_porteo, subbtn_mbl_porteo].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/porteo_blog.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 4 de Septiembre'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 50%");
+    postText.innerHTML = `<h4>Porteo ergonómico: una inversión en el desarrollo de tu bebé</h4>
               <p>Portear a tu bebé puede parecer un gesto sencillo, pero en realidad cada porteo tiene un impacto profundo en su desarrollo.<br>
               No solo calma: moldea su cerebro, fortalece su vínculo contigo y cuida su salud física y emocional.</p>
 
@@ -84,78 +225,6 @@ En Keiki creemos que <b>cuidar desde el cuerpo es cuidar desde la ciencia y el c
             </p>
 
             `;
-
-/* SIDE BAR */
-
-// Mostrar Menú Lateral
-sideBarBtn.addEventListener("click", () => {
-  sideBarBtn.classList.toggle("adjust-btn");
-  sideBar.classList.toggle("slide");
-  plusSign.classList.toggle("hidden");
-  minusSign.classList.toggle("hidden");
-});
-
-// Ocultar Menú Lateral
-document.addEventListener("click", (e) => {
-  if (sideBar.classList.contains("slide")) {
-    if (!sideBar.contains(e.target) && !sideBarBtn.contains(e.target)) {
-      console.log(sideBar.classList);
-      sideBarBtn.classList.toggle("adjust-btn");
-      sideBar.classList.toggle("slide");
-      plusSign.classList.toggle("hidden");
-      minusSign.classList.toggle("hidden");
-    }
-  }
-});
-
-const showSideBar = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sideBar.classList.add("show-bar");
-    } else {
-      sideBar.classList.remove("show-bar");
-    }
-  });
-};
-
-const sideBarObserver = new IntersectionObserver(showSideBar, {
-  root: null,
-  threshold: 0.05,
-});
-
-sideBarObserver.observe(postText);
-
-/*  ENVIAR EL POST */
-
-// AL CARGAR LA PÁGINA
-document.addEventListener("DOMContentLoaded", () => {
-  postText.insertAdjacentHTML("afterbegin", latestPost);
-  document
-    .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 4 de Septiembre'");
-  document
-    .querySelector(".header")
-    .style.setProperty("--img-position", "center 50%");
-  document
-    .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/porteo_blog.png)");
-});
-
-// AL SELECCIONAR UN POST
-
-// Porteo
-[subbtn_porteo, subbtn_mbl_porteo].forEach((e) => {
-  e.addEventListener("click", () => {
-    document
-      .querySelector(".header")
-      .style.setProperty("--image", "url(../public/images/porteo_blog.png)");
-    document
-      .querySelector(".header")
-      .style.setProperty("--before-content", "'Publicado el 4 de Septiembre'");
-    document
-      .querySelector(".header")
-      .style.setProperty("--img-position", "center 50%");
-    postText.innerHTML = latestPost;
   });
 });
 
@@ -1061,24 +1130,6 @@ Esto confirma que no solo los genes, sino la calidad de las experiencias tempran
                         ><u>10.7759/cureus.91571</u></a
                       >
                     </p>`;
-  });
-});
-
-[
-  subbtn_mbl_chatGPT,
-  subbtn_mbl_redLight,
-  subbtn_mbl_tTime,
-  subbtn_mbl_plasticidad,
-  subbtn_mbl_llanto,
-  subbtn_mbl_cojas,
-  subbtn_mbl_tapar,
-  subbtn_mbl_deformidades,
-].forEach((e) => {
-  e.addEventListener("click", () => {
-    sideBar.classList.remove("slide");
-    minusSign.classList.toggle("hidden");
-    plusSign.classList.toggle("hidden");
-    sideBarBtn.classList.toggle("adjust-btn");
   });
 });
 
