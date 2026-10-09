@@ -14,6 +14,7 @@ const subbtn_tapar = document.getElementById("tapar");
 const subbtn_deformidades = document.getElementById("deformidades");
 const subbtn_porteo = document.getElementById("porteo");
 const subbtn_vacunas = document.getElementById("vacunas");
+const subbtn_gateo = document.getElementById("gateo");
 const subbtn_mbl_redLight = document.getElementById("mbl-LuzRoja");
 const subbtn_mbl_chatGPT = document.getElementById("mbl-ChatGPT");
 const subbtn_mbl_tTime = document.getElementById("mbl-tummyTime");
@@ -24,6 +25,7 @@ const subbtn_mbl_tapar = document.getElementById("mbl-tapar");
 const subbtn_mbl_deformidades = document.getElementById("mbl-deformidades");
 const subbtn_mbl_porteo = document.getElementById("mbl-porteo");
 const subbtn_mbl_vacunas = document.getElementById("mbl-vacunas");
+const subbtn_mbl_gateo = document.getElementById("mbl-gateo");
 const postText = document.querySelector(".text");
 const sideBar = document.querySelector(".mbl-side-bar");
 const sideBarBtn = document.querySelector(".button");
@@ -31,37 +33,98 @@ const plusSign = document.getElementById("plus");
 const minusSign = document.getElementById("minus");
 const footer = document.querySelector(".footer");
 
-const latestPost = `<h4>VACUNAS A LO LARGO DE LA VIDA: pequeños cuidados que protegen grandes historias</h4>
+const latestPost = `<h4>El gateo: ¿hito prescindible o experiencia clave en el desarrollo?</h4>
 
-              <p>Hoy quiero hablarte de algo que a veces puede parecer complicado: el calendario de vacunas. </p>
+              <p>En 2022, los Centers for Disease Control and Prevention actualizaron su guía de hitos del desarrollo y eliminaron el gateo como hito motor “obligatorio”.</p>
 
-              <p>Entre revisiones, citas y la rutina diaria, es fácil perderse o no recordar exactamente cuándo toca cada dosis. Pero, como siempre digo, la prevención es la base de una vida saludable, y un pequeño cuidado hoy puede proteger grandes historias mañana.</p>
+              <p>Este cambio generó dudas en muchas familias y profesionales:
+¿significa esto que el gateo ya no es importante?
+</p>
+
+<p>La respuesta corta es no.
+La respuesta larga merece ser explicada.</p>
+
               <h5>
-                Mi punto de vista
+                ¿Por qué la CDC eliminó el gateo como hito?
               </h5>
               
               <p>
-                Como fisioterapeuta especializada en infancia y pediatría, veo a diario cómo los pequeños hábitos preventivos marcan la diferencia. Las vacunas son uno de esos pilares: no solo protegen contra enfermedades, sino que permiten que los niños y niñas crezcan explorando, jugando y desarrollándose con seguridad.
+                El motivo principal es la variabilidad del <b>desarrollo motor</b>.
               </p>
               
-              <p>Me gusta pensar que vacunarse no es solo un “chequeo médico más”, sino un acto de cuidado consciente: cuidamos a nuestros peques, cuidamos a la comunidad y nos cuidamos a nosotros mismos.</p>
+              <p>No todos los bebés gatean de la misma forma, y algunos ni siquiera gatean como tal:</p>
               
-              <h5>Pequeños cuidados que suman</h5>
-            
             <ul>
-              <li>🌸 <b>Mantén el calendario a mano:</b> consultarlo antes de cada revisión médica facilita planificar las visitas y evita olvidos.  </li>
-              <li>🌸 <b>Conoce las vacunas recomendadas según la edad:</b> desde recién nacidos hasta adultos, cada dosis tiene su razón científica. Puedes consultar el calendario oficial <a href="https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf"><u>aquí.</u><a> </li>
-              <li>🌸 <b>Sigue las indicaciones de tu pediatra o profesional de confianza:</b> cada familia tiene sus matices, y el calendario oficial nos da la guía general. </li>
+              <li>🌸 Algunos se arrastran </li>
+              <li>🌸 Otros ruedan </li>
+              <li>🌸 Otros combinan estrategias </li>
+              <li>🌸 ... y otros pasan directamente a la bipedestación </li>
             </ul>
+
+            <p>
+                Desde una perspectiva poblacional, esto hace difícil usar el gateo como un criterio rígido de “normalidad”.
+              </p>
+
+              <p>
+                Pero aquí viene lo importante:
+              </p>
+
+              <p><u>
+                Que no sea un hito obligatorio no significa que no tenga valor.</u>
+              </p>
             
+            <h5>El gateo desde una perspectiva evolutiva</h5>
+            <p>Aquí hay algo que me parece especialmente interesante. 
+            </p>
+            <p>Si miramos la evolución del movimiento en especies, el patrón de desplazamiento cuadrúpeda aparece como una base funcional de organización motora en múltiples mamíferos.</p>
+            <p>En el ser humano, el gateo no es una “fase innecesaria”, sino una expresión transitoria de ese mismo principio organizativo:</p>
+            <ul>
+              <li>&#8594 coordinación cruzada</li>
+              <li>&#8594 estabilidad del tronco</li>
+              <li>&#8594 alternancia rítmica</li>
+              <li>&#8594 integración sensorial en movimiento</li>
+              </ul>
+            <p>Es decir, el bebé no “imita” a otros animales… pero sí utiliza un patrón motor que comparte principios neurológicos con otras formas de locomoción en la naturaleza.</p>
+            <h5>¿Qué aporta el gateo según la evidencia?</h5>
+            <p>Cuando un bebé gatea, no solo se desplaza.</p>
+            <p>Está construyendo una red compleja de integración sensorial y motora:</p>
+             <ul>
+              <li>mejora de la percepción espacial  </li>
+              <li>🌸 coordinación entre hemisferios cerebrales  </li>
+              <li>🌸 integración vestibular (equilibrio)   </li>
+              <li>🌸 propiocepción (conciencia corporal)  </li>
+              <li>🌸 ajuste visual en movimiento   </li>
+              <li>🌸 coordinación bilateral cruzada    </li>
+              </ul>
+              <p>Este tipo de movimiento rítmico y simétrico ha sido relacionado con procesos de maduración neuromotora progresiva.</p>
+              <h5>Movimiento, exploración y aprendizaje</h5>
+              <p>Además de lo motor, el gateo cambia algo clave: la forma en la que el bebé se relaciona con el espacio.</p>
+            <p>Pasa de ser un observador a ser alguien que explora activamente su entorno.</p>
+            <p>Y esto tiene implicaciones importantes:</p>
+            <ul>
+              <li>🌸 mejora de la percepción espacial  </li>
+              <li>🌸 desarrollo de la coordinación ojo-mano  </li>
+              <li>🌸 mayor exploración del entorno  </li>
+              <li>🌸 construcción progresiva de la planificación motora  </li>
+              </ul>
+            <p>Algunos estudios han relacionado estas experiencias tempranas con habilidades posteriores de organización espacial y aprendizaje motor.</p>
+            <h5>Entonces, ¿qué hacemos con el gateo hoy?</h5>
+              <p>Desde la práctica clínica actual, el enfoque no es si “debe o no debe” gatear. Es entender que el gateo es una <b>oportunidad de desarrollo</b>, no una obligación. </p>
+            <p>Pero sí es una oportunidad especialmente potente, porque integra múltiples sistemas al mismo tiempo. Por eso, cuando aparece, no es un detalle menor. </p>
+            <p>Es un momento de construcción neuromotora muy relevante.</p>
             <h5>Reflexión Keiki</h5>
-            <p>Cada vacuna, cada cita y cada dosis son pasos hacia historias más saludables. 
-            </p>
-            <p>Por eso, guardar tu calendario y consultarlo cuando lo necesites no es solo organizar, es proteger el futuro de tus hijos.</p>
-            <p>Y no se trata solo de proteger a tu peque: cada vacuna ayuda a cuidar también a otros niños y niñas, especialmente a los más vulnerables. Enfermedades que hoy damos por casi erradicadas gracias a la vacunación pueden reaparecer si se interrumpe la protección colectiva. </b>.</p>
-            <p>Por eso, la prevención siempre suma: cuidar a tu hijo es cuidar a toda la comunidad.
-            </p>
-            <p>`;
+              <p>Desde Keiki, el gateo no es un hito que haya que vigilar, sino una experiencia que merece espacio para aparecer. No todos los bebés lo van a hacer, y eso entra dentro de la variabilidad del desarrollo.</p>
+            <p>Pero cuando el cuerpo encuentra suelo, tiempo y libertad, muchas cosas empiezan a organizarse desde dentro de una forma muy viva y muy inteligente.</p>
+            <p>Para mí, el gateo no es una obligación, pero sí una oportunidad preciosa. Una de esas etapas donde el bebé no solo se mueve… sino que integra, explora y construye bases importantes para su desarrollo neuromotor.</p>
+            <p>Y creo que ahí está el punto clave: no en forzar procesos, sino en entender su valor, facilitar que puedan aparecer y acompañarlos con respeto, presencia y confianza en lo que el cuerpo es capaz de hacer cuando tiene las condiciones adecuadas.</p>
+            <p>Fuentes:</p>
+            <ul>
+              <li><a href="https://www.elsevier.es/es-revista-acta-investigacion-psicologica-psychological-111-articulo-relacion-entre-madurez-neuropsicologica-presenciaausencia-S2007471916300205">•	Morales Suárez, A., & Rincón Lozada, C. F. (2015). Relación entre madurez neuropsicológica y presencia-ausencia de la conducta de gateo. Universidad Pedagógica y Tecnológica de Colombia. </li>
+              <li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00097/full">•	Frontiers in Psychology (2013). Infant crawling experience is related to development of spatial and cognitive abilities.</li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/2038537/">•	McEwan, M. H., Dihoff, R. E., & Brosvic, G. M. (1991). Early infant crawling experience is reflected in later motor skill development. Perceptual and Motor Skills, 72(1), 75–79.</li>
+              <li>•	Piper, M. C., & Darrah, J. (2014). Motor Assessment of the Developing Infant. Elsevier.</li>
+            </ul>
+            `;
 
 /* SIDE BAR */
 
@@ -98,6 +161,7 @@ document.addEventListener("click", (e) => {
   subbtn_mbl_deformidades,
   subbtn_mbl_porteo,
   subbtn_mbl_vacunas,
+  subbtn_mbl_gateo,
 ].forEach((e) => {
   e.addEventListener("click", () => {
     sideBar.classList.remove("slide");
@@ -131,16 +195,32 @@ document.addEventListener("DOMContentLoaded", () => {
   postText.insertAdjacentHTML("afterbegin", latestPost);
   document
     .querySelector(".header")
-    .style.setProperty("--before-content", "'Publicado el 18 de Septiembre'");
+    .style.setProperty("--before-content", "'Publicado el 8 de Octubre'");
   document
     .querySelector(".header")
-    .style.setProperty("--img-position", "center 80%");
+    .style.setProperty("--img-position", "center 100%");
   document
     .querySelector(".header")
-    .style.setProperty("--image", "url(../public/images/VACUNAS.png)");
+    .style.setProperty("--image", "url(../public/images/gateoImg.png)");
 });
 
 // AL SELECCIONAR UN POST
+
+// Gateo
+[subbtn_gateo, subbtn_mbl_gateo].forEach((e) => {
+  e.addEventListener("click", () => {
+    document
+      .querySelector(".header")
+      .style.setProperty("--image", "url(../public/images/gateoImg.png)");
+    document
+      .querySelector(".header")
+      .style.setProperty("--before-content", "'Publicado el 8 de Octubrere'");
+    document
+      .querySelector(".header")
+      .style.setProperty("--img-position", "center 100%");
+    postText.innerHTML = latestPost;
+  });
+});
 
 // Vacunas
 [subbtn_vacunas, subbtn_mbl_vacunas].forEach((e) => {
@@ -154,7 +234,37 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelector(".header")
       .style.setProperty("--img-position", "center 80%");
-    postText.innerHTML = latestPost;
+    postText.innerHTML = `<h4>VACUNAS A LO LARGO DE LA VIDA: pequeños cuidados que protegen grandes historias</h4>
+
+              <p>Hoy quiero hablarte de algo que a veces puede parecer complicado: el calendario de vacunas. </p>
+
+              <p>Entre revisiones, citas y la rutina diaria, es fácil perderse o no recordar exactamente cuándo toca cada dosis. Pero, como siempre digo, la prevención es la base de una vida saludable, y un pequeño cuidado hoy puede proteger grandes historias mañana.</p>
+              <h5>
+                Mi punto de vista
+              </h5>
+              
+              <p>
+                Como fisioterapeuta especializada en infancia y pediatría, veo a diario cómo los pequeños hábitos preventivos marcan la diferencia. Las vacunas son uno de esos pilares: no solo protegen contra enfermedades, sino que permiten que los niños y niñas crezcan explorando, jugando y desarrollándose con seguridad.
+              </p>
+              
+              <p>Me gusta pensar que vacunarse no es solo un “chequeo médico más”, sino un acto de cuidado consciente: cuidamos a nuestros peques, cuidamos a la comunidad y nos cuidamos a nosotros mismos.</p>
+              
+              <h5>Pequeños cuidados que suman</h5>
+            
+            <ul>
+              <li>🌸 <b>Mantén el calendario a mano:</b> consultarlo antes de cada revisión médica facilita planificar las visitas y evita olvidos.  </li>
+              <li>🌸 <b>Conoce las vacunas recomendadas según la edad:</b> desde recién nacidos hasta adultos, cada dosis tiene su razón científica. Puedes consultar el calendario oficial <a href="https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf"><u>aquí.</u><a> </li>
+              <li>🌸 <b>Sigue las indicaciones de tu pediatra o profesional de confianza:</b> cada familia tiene sus matices, y el calendario oficial nos da la guía general. </li>
+            </ul>
+            
+            <h5>Reflexión Keiki</h5>
+            <p>Cada vacuna, cada cita y cada dosis son pasos hacia historias más saludables. 
+            </p>
+            <p>Por eso, guardar tu calendario y consultarlo cuando lo necesites no es solo organizar, es proteger el futuro de tus hijos.</p>
+            <p>Y no se trata solo de proteger a tu peque: cada vacuna ayuda a cuidar también a otros niños y niñas, especialmente a los más vulnerables. Enfermedades que hoy damos por casi erradicadas gracias a la vacunación pueden reaparecer si se interrumpe la protección colectiva. </b>.</p>
+            <p>Por eso, la prevención siempre suma: cuidar a tu hijo es cuidar a toda la comunidad.
+            </p>
+            <p>`;
   });
 });
 
